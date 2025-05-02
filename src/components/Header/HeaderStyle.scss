@@ -1,0 +1,35 @@
+.headerstyling {
+	&__wave {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+	}
+
+	.overnav {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+        &__morningtrain {
+            height: 40px;
+        }
+		.navigation {
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+			a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                
+            }
+		}
+
+        &__moon {
+            height: 20px;
+        }
+
+	}
+}
