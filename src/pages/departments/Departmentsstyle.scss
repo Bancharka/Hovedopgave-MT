@@ -1,0 +1,13 @@
+.departments {
+    position: relative;
+    background-color: blue;
+
+    &__wave {
+        position: absolute;
+
+        &--left {
+            left: 0;
+            rotate: 90deg;
+        }
+    }
+}

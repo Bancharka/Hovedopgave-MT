@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.tagline {
+    color: $grey;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.heading-1 {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $txtcolor;
+}
