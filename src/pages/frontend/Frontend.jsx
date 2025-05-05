@@ -1,6 +1,7 @@
 import './FrontendStyle.scss'
 import ContentHeader from '../../components/contentheader/ContentHeader'
 import Bubbles from '../../components/bubbles/Bubbles'
+import Header from '../../components/Header/Header.jsx'
 
 export default function Frontend() {
     
@@ -23,6 +24,7 @@ export default function Frontend() {
         
 
         <section>
+            <Header />
             <Bubbles positions={headerbubbles} /> 
             </section>
         <section className="frontend">
@@ -35,4 +37,7 @@ export default function Frontend() {
         </>
     )
 }
+
+
+
 
