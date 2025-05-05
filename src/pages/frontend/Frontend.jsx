@@ -4,7 +4,7 @@ import ContentHeader from '../../components/contentheader/ContentHeader'
 export default function Frontend() {
     return (
         <>
-        <section className="frontend">
+        <section className="frontend page-container">
         <ContentHeader 
             tagline="Velkommen til"
             heading="Frontend Udvikling"
