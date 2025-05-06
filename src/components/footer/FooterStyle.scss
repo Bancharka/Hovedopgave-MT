@@ -17,4 +17,8 @@
         font-weight: 500;
         padding: 0 0.5rem;
     }
+    &__description {
+        color: v.$grey;
+        font-size: 12px;
+    }
 }

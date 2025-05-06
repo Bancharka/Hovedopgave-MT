@@ -15,9 +15,9 @@ export default function Footer() {
                         <a href="https://morningtrain.dk/" target="_blank" rel="noopener noreferrer" className='footer__linktext'>Morningtrack</a>
                         <a href="https://morningtrain.dk/" target="_blank" rel="noopener noreferrer" className='footer__linktext'>Morningassets</a>
                         <a href="https://morningtrain.dk/" target="_blank" rel="noopener noreferrer" className='footer__linktext'>DesignSub</a>
-
                 </div>
                 <Divider />
+                    <p className='footer__description'>@ 2025 Mornings ApS • Rugårdsvej 55A 1 tv, 5000 Odense C, Danmark • Tlf: +45 70 44 43 17 • CVR: 33362749</p>
             </footer>
         </>
     )
