@@ -19,7 +19,7 @@ export default function Departments() {
 
           <div>
             <img src="src\assets\img\jakob-pill.png" alt="" />
-            <a href="/Frontend.jsx">Frontend</a>
+            <a href="/Practical.jsx">Praktisk info</a>
           </div>
 
           <div>

@@ -1,9 +1,7 @@
 @use './variables' as *;
 @use 'typography';
 @use 'fonts';
-@use './mixins/breakpoints';
+@use './mixins/breakpoints' as b;
 @use './modules/page-container' as page;
 
-.page-container {
-  @include page.page-container;
-}
+@include page.page-container; 
