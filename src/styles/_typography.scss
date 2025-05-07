@@ -1,18 +1,64 @@
 @use "./variables" as *;
+@use "./mixins/breakpoints" as b;
 
 .tagline {
     color: $grey;
     font-size: 16px;
     text-transform: uppercase;
+
+    @include b.break(tablet) {
+        font-size: 14px;
+    }
+
+    @include b.break(mobile) {
+        font-size: 12px;
+    }
 }
 
-.heading-1 {
+h1 {
     font-size: 96px;
     font-weight: 700;
+
+    @include b.break(laptop) {
+        font-size: 80px;
+    }
+
+    @include b.break(tablet) {
+        font-size: 64px;
+    }
+
+    @include b.break(mobile) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+
+    @include b.break(laptop) {
+        font-size: 40px;
+    }
+
+    @include b.break(tablet) {
+        font-size: 32px;
+    }
+
+    @include b.break(mobile) {
+        font-size: 24px;
+    }
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
     color: $txtcolor;
+
+    @include b.break(tablet) {
+        font-size: 14px;
+    }
+
+    @include b.break(mobile) {
+        font-size: 12px;
+    }
 }
