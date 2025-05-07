@@ -1,0 +1,9 @@
+@use '../../styles/variables/index' as v;
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: v.$mt-orange;
+    border: none;
+    margin: 2rem auto;
+}
