@@ -1,16 +1,13 @@
 import { Routes, Route, Link } from 'react-router-dom'
-import Departments from './pages/departments/Departments'
+import Header from './components/header/Header'
 import Practical from './pages/practical/Practical'
 
 export default function App() {
   return (
     <div>
-      <nav>
-        <Link to="/">Departments</Link>
-        <Link to="/Practical">Praktisk info</Link>
-      </nav>
+      <Header />
       <Routes>
-        <Route path="/" element={<Departments />} />
+        <Route path="/" element={<Practical />} />
         <Route path="/Practical" element={<Practical />} />
       </Routes>
     </div>
