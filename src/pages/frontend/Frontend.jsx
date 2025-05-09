@@ -6,14 +6,14 @@ import Header from '../../components/Header/Header.jsx'
 export default function Frontend() {
     
     const headerbubbles = [
-        { top: '10%', left: '15%', size: '8px', delay: '0s' },
-        { top: '20%', left: '80%', size: '12px', delay: '1s' },
-        { top: '35%', left: '50%', size: '6px', delay: '2s' },
+        { top: '10%', left: '22%', size: '8px', delay: '0s' },
+        { top: '30%', left: '95%', size: '12px', delay: '1s' },
+        { top: '8%', left: '50%', size: '6px', delay: '2s' },
         { top: '60%', left: '20%', size: '10px', delay: '3s' },
-        { top: '70%', left: '70%', size: '14px', delay: '4s' },
+        { top: '20%', left: '70%', size: '14px', delay: '4s' },
         { top: '25%', left: '30%', size: '16px', delay: '2.5s' },
         { top: '50%', left: '85%', size: '18px', delay: '3.5s' },
-        { top: '75%', left: '40%', size: '20px', delay: '1.8s' },
+        { top: '25%', left: '95%', size: '20px', delay: '1.8s' },
         { top: '15%', left: '60%', size: '22px', delay: '0.8s' },
         
         ];
