@@ -1,0 +1,41 @@
+@use '../../../styles/variables/index' as v;
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 8px;
+  background-color: v.$lightorange; 
+  width: 450px;
+  position: relative;
+  margin-top: 70px;
+
+  &.theme-orange {
+    background-color: v.$lightorange;
+  }
+
+  &.theme-green {
+    background-color: v.$lightgreen;
+  }
+
+  &.theme-purple {
+    background-color: v.$lightpurple;
+  }
+
+  &.theme-red {
+    background-color: v.$lightred;
+  }
+
+  &__image {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -25%;
+  }
+
+
+}

@@ -1,0 +1,10 @@
+.testimonials {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
