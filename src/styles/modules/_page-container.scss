@@ -1,0 +1,24 @@
+@use '../variables' as v;
+@use '../mixins/breakpoints' as *;
+
+@mixin page-container {
+
+    .page-container {
+        max-width: v.$pc-desktop;
+        width: 100%;
+        margin: 0 auto;
+
+        @include break(laptop) {
+            max-width: v.$pc-laptop;
+        }
+
+        @include break(tablet) {
+            max-width: v.$pc-tablet;
+        }
+
+        @include break(mobile) {
+            max-width: v.$pc-mobile;
+            width: 90%;
+        }
+    }
+}
