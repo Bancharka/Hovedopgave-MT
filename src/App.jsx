@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom'
-import Departments from './pages/departments/Departments'
+import Frontpage from './pages/departments/Frontpage'
 
 export default function App() {
   return (
@@ -8,7 +8,7 @@ export default function App() {
         <Link to="/">Departments</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<Departments />} />
+        <Route path="/" element={<Frontpage />} />
       </Routes>
     </div>
   )
