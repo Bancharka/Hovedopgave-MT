@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom'
-import Frontpage from './pages/departments/Frontpage'
+import Frontpage from './pages/frontpage/Frontpage'
 import Practical from './pages/practical/Practical'
 
 
