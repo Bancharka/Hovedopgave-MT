@@ -1,0 +1,32 @@
+@use "../../styles/variables/index" as v;
+@use "../../styles/mixins/breakpoints" as b;
+
+.orangebox {
+	border: none;
+	background-color:lighten(v.$mt-orange, $amount: 15%);
+	border-radius: 8px;
+	padding: 10px 35px;
+	width: 350px;
+    margin: 50px 0px 50px;
+
+		@include b.break(tablet) {
+            
+			
+        }
+    
+    &__heading {
+        font-size: 20px;
+    }
+
+	&__list {
+		color: v.$txtcolor;
+		line-height: 1.5;
+        font-weight: 500;
+        
+        
+        li {
+            margin-bottom: 20px;
+        }
+
+	}
+}

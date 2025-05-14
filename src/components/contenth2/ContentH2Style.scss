@@ -1,0 +1,21 @@
+@use "../../styles/variables/index" as v;
+
+.contenth2 {
+
+    
+	&__category {
+		color: v.$mt-orange;
+		font-weight: 900;
+        margin-bottom: -35px;
+	}
+
+	&__paragraph {
+		&__bold1 {
+			font-weight: 800;
+		}
+
+        &__bold2 {
+			font-weight: 800;
+		}
+	}
+}
