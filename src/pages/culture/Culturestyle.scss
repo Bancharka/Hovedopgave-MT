@@ -1,18 +1,23 @@
-
+@use "../../styles/mixins/breakpoints" as b;
 
 
 .culture {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    
 
     &__twoorange {
-        display: flex;
+    display: flex;
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
-    
+    @include b.break(laptop) {
+            flex-direction: column;
+			
+        }
+        
+
     }
 }
 

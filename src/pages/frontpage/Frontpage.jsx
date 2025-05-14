@@ -10,8 +10,9 @@ export default function Departments() {
 				<div>
 					<p>VELKOMMEN TIL</p>
 					<img
-						src="public\img\onboardingtrain.svg"
+						src="\img\onboardingtrain.svg"
 						alt="onboradingtrain logo"
+						
 					/>
 				</div>
 
