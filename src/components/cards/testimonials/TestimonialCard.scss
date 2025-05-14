@@ -1,0 +1,84 @@
+@use '../../../styles/variables/index' as v;
+@use '../../../styles/mixins/breakpoints' as b;
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 50px 0 50px;
+  border-radius: 8px;
+  background-color: v.$lightorange; 
+  width: 400px;
+  position: relative;
+  margin-top: 120px;
+
+  @include b.break(tablet) {
+    padding: 50px 20px 0 20px;
+    
+  }
+
+  &.theme-orange {
+    background-color: v.$lightorange;
+  }
+
+  &.theme-green {
+    background-color: v.$lightgreen;
+  }
+
+  &.theme-purple {
+    background-color: v.$lightpurple;
+  }
+
+  &.theme-red {
+    background-color: v.$lightred;
+  }
+
+  &__image {
+  position: absolute;
+  top: -120px; // adjust this depending on the size you want it to stick out
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  &__description {
+    font-size: 1rem;
+  }
+  &__author {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  &__quote {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+
+    &--top {
+      top: 20px;
+      left: 20px;
+    }
+
+    &--bottom {
+      bottom: 20px;
+      right: 20px;
+      transform: rotate(180deg);
+    }
+  }
+  &__logo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
