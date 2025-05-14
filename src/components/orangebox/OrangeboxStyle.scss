@@ -4,33 +4,28 @@
 
 .orangebox {
 	border: none;
-	background-color: color.adjust(v.$mt-orange,  $lightness: 10%);
+	background-color: color.adjust(v.$mt-orange, $lightness: 10%);
 	border-radius: 8px;
 	padding: 10px 35px;
 	width: 350px;
-    margin: 50px 0px 50px;
+	margin: 50px 0px 50px;
 
-		@include b.break(laptop) {
-            margin: 0px 0px 0px;
-			
-        }
+	@include b.break(laptop) {
+		margin: 0px 0px 0px;
+	}
 
-		@include b.break(mobile) {
-            margin: 0px 0px 0px;
-			width: 90%;
-        }
-    
-    
+	@include b.break(mobile) {
+		margin: 0px 0px 0px;
+		width: 70%;
+	}
 
 	&__list {
 		color: v.$txtcolor;
 		line-height: 1.5;
-        font-weight: 500;
-        
-        
-        li {
-            margin-bottom: 20px;
-        }
+		font-weight: 500;
 
+		li {
+			margin-bottom: 20px;
+		}
 	}
 }
