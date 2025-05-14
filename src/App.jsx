@@ -10,7 +10,6 @@ export default function App() {
     <div>
       <Header />
       <Routes>
-
         <Route path="/" element={<Frontpage />} />
         <Route path="/" element={<Practical />} />
         <Route path="/Practical" element={<Practical />} />
