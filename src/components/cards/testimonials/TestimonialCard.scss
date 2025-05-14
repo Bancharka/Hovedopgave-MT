@@ -9,13 +9,13 @@
   padding: 120px 50px 0 50px;
   border-radius: 8px;
   background-color: v.$lightorange; 
-  width: 400px;
+  width: 380px;
   position: relative;
   margin-top: 120px;
 
-  @include b.break(tablet) {
-    padding: 50px 20px 0 20px;
-    
+  @include b.break(laptop) {
+    padding: 100px 50px 0 50px;
+    width: 340px;
   }
 
   &.theme-orange {
@@ -36,7 +36,7 @@
 
   &__image {
   position: absolute;
-  top: -120px; // adjust this depending on the size you want it to stick out
+  top: -120px; 
   left: 50%;
   transform: translateX(-50%);
   width: 240px;
@@ -44,6 +44,20 @@
   object-fit: cover;
   border-radius: 50%;
   z-index: 1;
+
+  @include b.break(laptop) {
+    width: 200px;
+    height: 200px;
+    }
+
+  @include b.break(tablet) {
+    width: 160px;
+    height: 160px;
+    }
+  @include b.break(mobile) {
+    width: 120px;
+    height: 120px;
+    }
   }
 
   &__heading {

@@ -39,11 +39,10 @@ export default function Testimonials() {
                 <TestimonialCard
                     theme='red'
                     image="/img/testimonials/clara.jpg"
-                    altText="Frontendpraktikant Clara"
-                    heading="Mit praktikforløb har givet mig selvtillid til mit fag"
-                    description="Før jeg startede tvivlede jeg på mine evner, og om jeg var “god nok” til at starte som frontendpraktikant hos Morning train. Jeg havde ikke tidligere erfaringer med React, og kun begrænset Wordpress erfaring fra studiet. 
-                                Men jeg oplevede at jeg lærte hurtigt, fik god personlig sparring og udviklede mig helt vildt. Nu har jeg en ny selvtillid og tro på, at jeg kan lære det jeg vil!"
-                    author="Clara la Cour, frontendpraktikant" />
+                    altText="Frontendpraktikant Søren"
+                    heading="Fra imposter-syndrom til selvtillid"
+                    description="Min praktik hos Morningtrain startede med imposter-syndrom, men det blev hurtigt afløst af selvtillid takket være god sparring og vejledning fra kollegaerne omkring mig. Jeg lærte at stå på egne ben og forstod, at man ikke kan alt fra starten. Det vigtigste, jeg tager med mig, er evnen til at lære at lære – et uundværligt værktøj i min karriere som udvikler."
+                    author="Søren Kloster, frontendpraktikant" />
             </div>
         </section>
     )
