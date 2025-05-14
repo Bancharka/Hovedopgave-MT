@@ -7,14 +7,14 @@ export default function Header() {
 			<section className="headerstyling">
 				<img
 					className="headerstyling__wave"
-					src="src\assets\img\wave-header.svg"
+					src="\img\wave-header.svg"
 					alt="Orange wave graphic"
 				/>
 				<div className="overnav">
 					<a href="/">
 						<img
 							className="overnav__morningtrain"
-							src="src\assets\img\logo-mt.svg"
+							src="\img\logo-mt.svg"
 							alt="Morningtrain logo"
 						/>
 					</a>
@@ -27,7 +27,7 @@ export default function Header() {
 					</nav>
 					<img
 						className="overnav__moon"
-						src="src\assets\img\icon _moon.svg"
+						src="\img\icon _moon.svg"
 						alt="Darkmode icon"
 					/>
 				</div>

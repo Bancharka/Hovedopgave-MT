@@ -49,6 +49,23 @@ h2 {
     }
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+    @include b.break(laptop) {
+        font-size: 22px;
+    }
+
+    @include b.break(tablet) {
+        font-size: 18px;
+    }
+
+    @include b.break(mobile) {
+        font-size: 16px;
+    }
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -62,3 +79,5 @@ p {
         font-size: 12px;
     }
 }
+
+
