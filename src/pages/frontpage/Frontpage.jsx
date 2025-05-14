@@ -1,5 +1,4 @@
 import "./frontpagestyle.scss";
-import Header from "../../components/Header/Header";
 import Divider from "../../components/divider/Divider";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
@@ -7,7 +6,6 @@ import Footer from "../../components/footer/Footer";
 export default function Departments() {
 	return (
 		<>
-			<Header />
 			<section className="page-container frontpage">
 				<div>
 					<p>VELKOMMEN TIL</p>

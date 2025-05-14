@@ -19,11 +19,11 @@ export default function Header() {
 						/>
 					</a>
 					<nav className="navigation">
-        <Link to="/Practical">Praktisk info</Link>
-				<Link to="/Practical">Kultur</Link>
-				<Link to="/Practical">Ressourcer</Link>
-				<Link to="/Practical">Teamet</Link>
-				<Link to="/Practical">Testimonials</Link>
+						<Link to="/Practical">Praktisk info</Link>
+						<Link to="/Culture">Kultur</Link>
+						<Link to="/Practical">Ressourcer</Link>
+						<Link to="/Practical">Teamet</Link>
+						<Link to="/Testimonials">Tidligere praktikanter</Link>
 					</nav>
 					<img
 						className="overnav__moon"
