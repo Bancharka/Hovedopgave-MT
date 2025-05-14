@@ -8,7 +8,7 @@ import "./Culturestyle.scss";
 export default function Culture() {
 	return (
 		<>
-			<section className="page-container">
+			<section className="page-container culture">
 				<ContentHeader
 					tagline="Så er du klar!"
 					heading="Kultur"
@@ -47,10 +47,10 @@ export default function Culture() {
 					orangeheading="Essensen i missionen"
 					orangelist=
 					{[
-						"Kulturen først: Forandringer starter i kulturen – det er vores vigtigste værktøj.",
+						"Kulturen først: Forandringer starter i kulturen - det er vores vigtigste værktøj.",
 						"Selvledelse og relationer: Vi tror på frihed under ansvar og stærke relationer. Man er ''direktør ved eget skrivebord'', men aldrig alene.",
 						"Balance: Effektivitet og talentudvikling skal gå hånd i hånd. Vi investerer i udvikling, også når det koster på kort sigt.",
-						"Effekt og løsninger: Vi går op i, om vores løsninger reelt skaber værdi – både for kunden og os selv.",
+						"Effekt og løsninger: Vi går op i, om vores løsninger reelt skaber værdi - både for kunden og os selv.",
 						"Kundens behov først: Vores succes måles i kundens udbytte, ikke interne KPI’er. Når kunden lykkes, gør vi det også.",
 						
 					]}
@@ -63,15 +63,15 @@ export default function Culture() {
 					contentsubheader="Værdier er ikke evige - de er aktuelle"
 					paragraph1="Vi ser vores værdier som gæster i huset. De vælges til og genbesøges ca. hvert 4.-5. år, så de altid afspejler den retning og det fokus, som organisationen har brug for. Nogle værdier skiftes ud, fordi de nu lever naturligt i organisationen, andre fordi nye behov opstår."
 				/>
-				<div className="twoorange">
+				<div className="culture__twoorange">
 					<Orangebox
 						orangeheading="Vi SATS'er på det, der betyder noget"
 						orangelist=
 						{[
 							"Samspil - Vi ved, hvornår vi skal spille solo og hvornår vi spiller i takt.",
-							"Ansvarlighed – Vi tager ejerskab og følger ting til dørs.",
-							"Tillid – Vi møder hinanden med nysgerrighed og gode intentioner.",
-							"Selvfornyelse – Vi udvikler os selv og hinanden med lyst og åbenhed.",
+							"Ansvarlighed - Vi tager ejerskab og følger ting til dørs.",
+							"Tillid - Vi møder hinanden med nysgerrighed og gode intentioner.",
+							"Selvfornyelse - Vi udvikler os selv og hinanden med lyst og åbenhed.",
 									
 						]}
 					/>
@@ -81,9 +81,9 @@ export default function Culture() {
 						{[
 							"Værdibarometermøder: Vi diskuterer konkrete hændelser og ser på, hvordan værdierne har været i spil.",
 							"Feedbackrutiner: Kærlig, konkret og konstruktiv feedback er en fælles forpligtelse.",
-							"Podcast 'Øster i øret': Åbenhed fra direktionslokalet – spørgsmål uden filter.",
+							"Podcast 'Øster i øret': Åbenhed fra direktionslokalet - spørgsmål uden filter.",
 							"Luxafor-lamper: Signalerer, hvornår man kan forstyrre og hvornår man ikke kan.",
-							"Tjek-ind/-ud i møder: Vi deler, hvad vi bringer ind i rummet – og hvorfor.",
+							"Tjek-ind/-ud i møder: Vi deler, hvad vi bringer ind i rummet - og hvorfor.",
 							"Domæner og roller > titler: Ansvar og beslutninger følger kompetence, ikke hierarki.",
 							
 						]}
