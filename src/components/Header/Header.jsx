@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import "./HeaderStyle.scss";
 
 export default function Header() {
@@ -17,12 +18,13 @@ export default function Header() {
 							alt="Morningtrain logo"
 						/>
 					</a>
-					<div className="navigation">
-						<a href="">Marketing</a>
-						<a href="">Frontend</a>
-						<a href="">Design</a>
-						<a href="">Backend</a>
-					</div>
+					<nav className="navigation">
+        <Link to="/Practical">Praktisk info</Link>
+				<Link to="/Practical">Kultur</Link>
+				<Link to="/Practical">Ressourcer</Link>
+				<Link to="/Practical">Teamet</Link>
+				<Link to="/Practical">Testimonials</Link>
+					</nav>
 					<img
 						className="overnav__moon"
 						src="src\assets\img\icon _moon.svg"
