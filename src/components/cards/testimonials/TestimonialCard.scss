@@ -9,67 +9,86 @@
   padding: 120px 50px 0 50px;
   border-radius: 8px;
   background-color: v.$lightorange; 
-  width: 400px;
+  width: 380px;
   position: relative;
   margin-top: 120px;
 
+  @include b.break(laptop) {
+    padding: 80px 50px 0 50px;
+    width: 270px;
+    margin-top: 130px;
+  }
+
   @include b.break(tablet) {
-    padding: 50px 20px 0 20px;
-    
+    width: 300px;
+    margin-top: 80px;
   }
 
-  &.theme-orange {
-    background-color: v.$lightorange;
-  }
-
-  &.theme-green {
-    background-color: v.$lightgreen;
-  }
-
-  &.theme-purple {
-    background-color: v.$lightpurple;
-  }
-
-  &.theme-red {
-    background-color: v.$lightred;
-  }
-
+  
   &__image {
-  position: absolute;
-  top: -120px; // adjust this depending on the size you want it to stick out
-  left: 50%;
-  transform: translateX(-50%);
-  width: 240px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 50%;
-  z-index: 1;
+    position: absolute;
+    top: -120px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+    
+    @include b.break(laptop) {
+      width: 200px;
+      height: 200px;
+    }
+    
+    @include b.break(tablet) {
+      width: 160px;
+      height: 160px;
+      top: -70px;
+    }
   }
-
+  
   &__heading {
     font-size: 1.5rem;
     font-style: italic;
+    
+    @include b.break(laptop) {
+      font-size: 1.4rem;
+    }
+    
+    @include b.break(tablet) {
+      font-size: 1.3rem;
+    }
+    
+    @include b.break(mobile) {
+      font-size: 1.2rem;
+    }
   }
-
+  
   &__description {
     font-size: 1rem;
+    
+    @include b.break(laptop) {
+      font-size: 0.9rem;
+    }
+    
   }
   &__author {
     font-style: italic;
     font-size: 0.9rem;
   }
-
+  
   &__quote {
     position: absolute;
     width: 40px;
     height: 40px;
     pointer-events: none;
-
+    
     &--top {
       top: 20px;
       left: 20px;
     }
-
+    
     &--bottom {
       bottom: 20px;
       right: 20px;
@@ -81,4 +100,21 @@
     right: 20px;
     top: 20px;
   }
+
+  &.theme-orange {
+    background-color: v.$lightorange;
+  }
+  
+  &.theme-green {
+    background-color: v.$lightgreen;
+  }
+  
+  &.theme-purple {
+    background-color: v.$lightpurple;
+  }
+  
+  &.theme-red {
+    background-color: v.$lightred;
+  }
+
 }

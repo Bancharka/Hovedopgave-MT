@@ -1,4 +1,7 @@
+@use "../../styles/mixins/breakpoints" as b;
+
 .testimonials {
+  
   &__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -6,5 +9,15 @@
     gap: 15px;
     max-width: 900px;
     margin: 0 auto;
+
+    @include b.break(laptop) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+    }
+
+    @include b.break(tablet) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 }

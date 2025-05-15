@@ -10,7 +10,7 @@ export default function Departments() {
 				<div>
 					<p>VELKOMMEN TIL</p>
 					<img
-						src="\img\onboardingtrain.svg"
+						src="/img/onboardingtrain.svg"
 						alt="onboradingtrain logo"
 						
 					/>
@@ -21,7 +21,7 @@ export default function Departments() {
 				<div>
 					<img
 						className="frontpage__collage"
-						src="\img\slack_header.jpg"
+						src="/img/slack_header.jpg"
 						alt=""
 					/>
 					<h3 className="frontpage__description">

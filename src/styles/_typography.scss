@@ -95,13 +95,6 @@ li {
     color: $txtcolor;
     list-style: disc;
 
-    @include b.break(tablet) {
-        font-size: 14px;
-    }
-
-    @include b.break(mobile) {
-        font-size: 12px;
-    }
 }
 
 
