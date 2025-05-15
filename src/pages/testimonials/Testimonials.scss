@@ -12,11 +12,12 @@
 
     @include b.break(laptop) {
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 5px;
     }
 
     @include b.break(tablet) {
       grid-template-columns: 1fr;
+      justify-items: center;
     }
   }
 }
