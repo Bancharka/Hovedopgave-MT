@@ -73,7 +73,6 @@ p {
     font-size: 16px;
     line-height: 1.5;
     color: $txtcolor;
-    margin-bottom: $space-md;
 
     @include b.break(tablet) {
         font-size: 14px;
