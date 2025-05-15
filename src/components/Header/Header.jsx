@@ -22,7 +22,7 @@ export default function Header() {
 						<Link to="/Practical">Praktisk info</Link>
 						<Link to="/Culture">Kultur</Link>
 						<Link to="/Practical">Ressourcer</Link>
-						<Link to="/Practical">Teamet</Link>
+						<Link to="/Team">Teamet</Link>
 						<Link to="/Testimonials">Tidligere praktikanter</Link>
 					</nav>
 					<img
