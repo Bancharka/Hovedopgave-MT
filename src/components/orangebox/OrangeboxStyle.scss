@@ -14,15 +14,21 @@
 		margin: 0px 0px 0px;
 	}
 
+	
+
 	@include b.break(mobile) {
 		margin: 0px 0px 0px;
-		width: 70%;
+		width: 75%;
 	}
 
 	&__list {
 		color: v.$txtcolor;
 		line-height: 1.5;
 		font-weight: 500;
+		@include b.break(tablet) {
+		padding-left: 25px;
+	}
+		
 
 		li {
 			margin-bottom: 20px;
