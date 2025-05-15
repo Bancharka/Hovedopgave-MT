@@ -18,6 +18,7 @@
 h1 {
     font-size: 96px;
     font-weight: 700;
+    margin-bottom: $space-sm;
 
     @include b.break(laptop) {
         font-size: 80px;
@@ -35,6 +36,7 @@ h1 {
 h2 {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: $space-sm;
 
     @include b.break(laptop) {
         font-size: 40px;
@@ -52,6 +54,7 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: $space-xs;
 
     @include b.break(laptop) {
         font-size: 22px;
@@ -70,6 +73,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     color: $txtcolor;
+    margin-bottom: $space-md;
 
     @include b.break(tablet) {
         font-size: 14px;
@@ -80,11 +84,16 @@ p {
     }
 }
 
+ul {
+    padding-left: 40px;
+}
+
 
 li {
     font-size: 16px;
     line-height: 1.5;
     color: $txtcolor;
+    list-style: disc;
 
     @include b.break(tablet) {
         font-size: 14px;
