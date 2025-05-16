@@ -15,8 +15,9 @@ export default function Team() {
             <Divider />
             <div className="team__cards">
                 <TeamCard
-                    image="/img/team/kollegaer.jpg"
+                    image="/img/team/jakob.jpg"
                     altText={"Kollegaer"}
+                    category="Frontend"
                     heading="Mød dine kollegaer"
                     description="Her kan du møde dine kommende kollegaer og se, hvad de arbejder med."
                 />

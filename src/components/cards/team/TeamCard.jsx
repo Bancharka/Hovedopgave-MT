@@ -1,5 +1,5 @@
-import "TeamCard.scss";
-import ContentH2 from "components/contenth2/ContentH2";
+import "./TeamCard.scss";
+import ContentH2 from "../../contenth2/ContentH2";
 
 export default function TeamCard({ image, altText, category, heading, description }) {
     return (
