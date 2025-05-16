@@ -1,0 +1,60 @@
+@use "../../styles/variables/index" as v;
+@use "../../styles/mixins/breakpoints" as b;
+
+.textimage {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @include b.break(tablet) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    @include b.break(tablet) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__image {
+    max-width: 50%;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__category {
+    color: v.$mt-orange;
+    font-weight: 900;
+  }
+
+  &__heading {
+    // existing heading styles if needed
+  }
+
+  &__description {
+    // existing description styles if needed
+  }
+
+  &__contentsubheader {
+    // add styles as needed
+  }
+
+  &__paragraph {
+    &__bold1,
+    &__bold2 {
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__paragraph1,
+  &__paragraph2 {
+    // additional paragraph styles if needed
+  }
+}
