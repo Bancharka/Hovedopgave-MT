@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import "./HeaderStyle.scss";
+import BurgerMenu from "../burger-menu/Burger-menu";
 
 export default function Header() {
  	return (
@@ -31,8 +32,11 @@ export default function Header() {
  						src="/img/header/icon _moon.svg"
  						alt="Darkmode icon"
  					/>
+					<BurgerMenu />
  				</div>
+				
  			</section>
+			
  		</>
  	);
  }
