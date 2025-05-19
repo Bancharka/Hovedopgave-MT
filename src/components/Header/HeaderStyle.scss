@@ -1,6 +1,11 @@
 @use "../../styles/mixins/breakpoints" as b;
 
 .headerstyling {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	
 	&__wave {
 		position: absolute;
 		top: 0px;
@@ -12,16 +17,31 @@
 		margin-top: 50px;
 		display: flex;
 		flex-direction: row;
-		width: 100%;
-		justify-content: space-around;
+		width: 90%;
+		justify-content: space-between;
+		gap: 20px;
 
 		&__morningtrain {
 			height: 40px;
+			padding-top: 15px;
+
+			@include b.break(laptop) {
+				height: 30px;
+				padding-top: 10px;
+			}
+		}
+
+		&__menu {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 20px;
 		}
 		.navigation {
 			display: flex;
 			justify-content: space-between;
 			width: 700px;
+			align-items: center;
 
 			@include b.break(tablet) {
 				display: none;
@@ -32,6 +52,10 @@
 				color: black;
 				font-size: 18px;
 				font-weight: 600;
+
+				@include b.break(laptop) {
+				font-size: 16px;
+			}
 			}
 		}
 

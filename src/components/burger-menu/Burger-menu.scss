@@ -1,53 +1,74 @@
+@use "../../styles/variables/index" as v;
+@use "../../styles/mixins/breakpoints" as b;
 
+.burger-menu {
+	display: none;
 
+	@include b.break(tablet) {
+		display: flex;
+	}
 
+	&__toggle {
+		font-size: 30px;
+		cursor: pointer;
+	}
 
-/* Overlay background */
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
-  z-index: 1;
-}
+	&__overlay {
+		height: 0%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		overflow-y: hidden;
+		transition: 0.5s;
+		z-index: 10;
 
-/* Show overlay */
-.overlay.show {
-  height: 100%;
-}
+		&--show {
+			height: 100%;
+		}
+	}
 
-/* Close button */
-.closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-}
+	&__close {
+		position: absolute;
+		top: 37px;
+		right: 17px;
+		font-size: 60px;
+		text-decoration: none;
+		color: #000;
+		cursor: pointer;
+		z-index: 11;
+	}
 
-/* Content links */
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-}
+	&__content {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 400px;
+		text-align: center;
+		background: linear-gradient(#fff, v.$mt-orange);
+		padding-top: 100px;
+		margin-top: -1px;
 
-.overlay-content a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
+		a {
+			padding: 10px;
+			text-decoration: none;
+			font-size: 36px;
+			color: black;
+			display: block;
+			transition: 0.3s;
 
-.overlay-content a:hover {
-  color: #f1f1f1;
+			@include b.break(mobile) {
+				font-size: 24px;
+			}
+		}
+
+		@include b.break(mobile) {
+			height: 300px;
+		}
+	}
+
+	&__wave {
+		width: 100%;
+	}
 }

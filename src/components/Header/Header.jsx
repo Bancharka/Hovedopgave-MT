@@ -27,12 +27,14 @@ export default function Header() {
  						<Link to="/Practical">Teamet</Link>
  						<Link to="/Testimonials">Tidligere praktikanter</Link>
  					</nav>
- 					<img
- 						className="overnav__moon"
- 						src="/img/header/icon _moon.svg"
- 						alt="Darkmode icon"
- 					/>
-					<BurgerMenu />
+					<div className="overnav__menu">
+						<img
+							className="overnav__moon"
+							src="/img/header/icon _moon.svg"
+							alt="Darkmode icon"
+						/>
+						<BurgerMenu />
+					</div>
  				</div>
 				
  			</section>
