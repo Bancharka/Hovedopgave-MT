@@ -3,6 +3,7 @@ import ContentHeader from "../../components/contentheader/ContentHeader";
 import Divider from "../../components/divider/Divider";
 import Footer from "../../components/footer/Footer";
 import Orangebox from "../../components/orangebox/Orangebox";
+import PageNav from "../../components/page-nav/PageNav";
 import "./Culturestyle.scss";
 
 export default function Culture() {
@@ -122,7 +123,7 @@ export default function Culture() {
 							
 						]}
 					/>
-				
+				<PageNav />
 				<Footer />
 			</section>
 		</>

@@ -1,0 +1,49 @@
+@use '../../styles/variables/index' as v;
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  &__prev,
+  &__next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: v.$txtcolor;
+
+    /* Static underline line */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #f97316;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #f97316;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+}

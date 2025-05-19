@@ -3,6 +3,7 @@ import ContentHeader from "../../components/contentheader/ContentHeader";
 import Divider from "../../components/divider/Divider";
 import TextImage from "../../components/textimage/TextImage";
 import Footer from "../../components/footer/Footer";
+import PageNav from '../../components/page-nav/PageNav';
 
 export default function Team() {
     return (
@@ -61,6 +62,7 @@ export default function Team() {
                 image="/img/team/mathias-light.png" 
                 altText="Mathias Munk - Backendudvikler" 
             />            
+            <PageNav />
             <Footer />
         </section>
     )
