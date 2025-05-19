@@ -1,39 +1,42 @@
+@use "../../styles/mixins/breakpoints" as b;
+
 .headerstyling {
 	&__wave {
 		position: absolute;
 		top: 0px;
 		width: 100%;
-        z-index: -1;
+		z-index: -1;
 	}
 
 	.overnav {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-        
+		margin-top: 50px;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
 
-        &__morningtrain {
-            height: 50px;
-        }
+		&__morningtrain {
+			height: 40px;
+		}
 		.navigation {
-            display: flex;
-            justify-content: space-between;
-            width: 700px;
-            
+			display: flex;
+			justify-content: space-between;
+			width: 700px;
+
+			@include b.break(tablet) {
+				display: none;
+			}
+
 			a {
-                text-decoration: none;
-                color: black;
-                font-size: 18px;
-                font-weight: 600;
-                
-            }
+				text-decoration: none;
+				color: black;
+				font-size: 18px;
+				font-weight: 600;
+			}
 		}
 
-        &__moon {
-            height: 20px;
-        }
-
+		&__moon {
+			height: 20px;
+		}
 	}
 }
