@@ -1,5 +1,8 @@
 @use "../../styles/mixins/breakpoints" as b;
 
+.contentheader__tagline {
+  color: var(--txtcolor); // ✅ Reacts to dark mode
+}
 
 .culture {
     display: flex;

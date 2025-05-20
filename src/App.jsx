@@ -4,10 +4,11 @@ import Header from './components/header/Header'
 import Practical from './pages/practical/Practical'
 import Testimonials from './pages/testimonials/Testimonials'
 import Culture from "./pages/culture/Culture"
+import { ThemeProvider } from './ThemeContext.jsx'
 
 export default function App() {
   return (
-    <div>
+    <ThemeProvider>
       <Header />
       <Routes>
         <Route path="/" element={<Frontpage />} />
@@ -16,6 +17,6 @@ export default function App() {
         <Route path="/Testimonials" element={<Testimonials />} />
         <Route path="/Culture" element={<Culture />} />
       </Routes>
-    </div>
-  )
+      </ThemeProvider>
+  );
 } 

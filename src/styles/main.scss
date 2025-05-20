@@ -4,4 +4,60 @@
 @use './mixins/breakpoints' as b;
 @use './modules/page-container' as page;
 
+
+body {
+  color: var(--txtcolor);
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  a,
+  span,
+  div {
+    color: var(--txtcolor);
+  }
+}
+
+body.dark-mode {
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+// 2. Define CSS custom properties for light mode
+:root {
+  --txtcolor: #404040;
+  --background: #ffffff;
+  --orange: #FF9452;
+  --grey: #4C4C4C;
+  --lightorange: #FF945299;
+  --lightpurple: #6C63F999;
+  --lightgreen: #73E2CA99;
+  --lightred: #FBA7AA99;
+}
+
+// 3. Override them inside dark mode
+.dark-mode {
+  --txtcolor: #f5f5f5;
+  --background: #121212;
+  --orange: #ff9b5c;
+  --grey: #bbbbbb;
+  // Add more if needed
+}
+
+// 4. Apply the variables globally
+body {
+  background-color: var(--background);
+  color: var(--txtcolor);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 @include page.page-container; 
