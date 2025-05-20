@@ -19,15 +19,15 @@ export default function PageNav() {
     const nextPage = pageOrder[currentIndex + 1];
 
     return (
-        <div className="page-nav">
+        <div className="page-nav page-container">
             {prevPage && (
                 <Link to={prevPage.path} className="page-nav__prev">
-                     <img src="/img/icons/arrow-left.svg" alt="Arrow left" /> {prevPage.label || 'Forside'} 
+                     <img className="page-nav__arrow--left" src="/img/icons/arrow-left.svg" alt="Arrow left" /> {prevPage.label || 'Forside'} 
                 </Link>
             )}
             {nextPage && nextPage.label && (
                 <Link to={nextPage.path} className="page-nav__next">
-                    {nextPage.label} <img src="/img/icons/arrow-right.svg" alt="Arrow right" />
+                    {nextPage.label} <img className="page-nav__arrow--right" src="/img/icons/arrow-right.svg" alt="Arrow right" />
                 </Link>
             )}
         </div>
