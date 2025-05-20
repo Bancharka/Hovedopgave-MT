@@ -5,6 +5,7 @@ export default function TextImage({
     heading,
     description,
     listItems = [],
+    links = [],
     contentsubheader,
     paragraph1,
     paragraph_bold1,
@@ -36,6 +37,23 @@ export default function TextImage({
                         ))}
                     </ul>
                 )}
+                
+                {links.length > 0 && (
+                    <div className="textimage__links">
+                        {links.map((link, index) => (
+                            <a
+                                key={index}
+                                href={link.href}
+                                className="textimage__link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {link.text}
+                            </a>
+                        ))}
+                    </div>
+                )}
+
                 {paragraph2 && <p className="textimage__paragraph2">{paragraph2}</p>}
             </div>
         </section>

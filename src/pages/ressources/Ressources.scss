@@ -1,0 +1,19 @@
+@use "../../styles/mixins/breakpoints" as b;
+
+.ressources {
+    position: relative;
+    &__images {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto;
+
+        @include b.break(tablet) {
+            width: 75%;
+        }
+
+        @include b.break(mobile) {
+            width: 100%;
+        }
+    }
+}
