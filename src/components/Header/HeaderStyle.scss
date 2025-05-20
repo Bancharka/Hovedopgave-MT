@@ -3,10 +3,14 @@
 .headerstyling {
 	display: flex;
 	justify-content: center;
-	position: sticky;
+
 	top: 0;
 	z-index: 10;
-	
+	position: relative;
+
+	@include b.break(mobile) {
+		overflow: hidden;
+	}
 
 	&__wave {
 		position: absolute;
@@ -22,12 +26,11 @@
 		@include b.break(mobile) {
 			margin-top: 0px;
 			width: 200%;
-			
 		}
 	}
 
 	.overnav {
-		margin-top: 50px;
+		margin-top: 30px;
 		display: flex;
 		flex-direction: row;
 		width: 90%;
