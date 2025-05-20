@@ -1,0 +1,82 @@
+@use '../../styles/variables/index' as v;
+@use "../../styles/mixins/breakpoints" as b;
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: v.$space-md;
+
+  &__prev,
+  &__next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: v.$txtcolor;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #f97316;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #f97316;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+
+  // Direction-specific animation origins
+  &__prev::before {
+    transform-origin: left;
+  }
+
+  &__next::before {
+    transform-origin: right;
+  }
+
+  &__arrow--right {
+    margin-left: 200px;
+
+    @include b.break(tablet) {
+      margin-left: 100px;
+    }
+
+    @include b.break(mobile) {
+      margin-left: 50px;
+    }
+  }
+
+  &__arrow--left {
+    margin-right: 200px;
+
+    @include b.break(tablet) {
+      margin-right: 100px;
+    }
+
+    @include b.break(mobile) {
+      margin-right: 50px;
+    }
+  }
+}

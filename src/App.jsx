@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom'
+import ScrollToTop from './components/scrolltotop/ScrollToTop'
 import Frontpage from './pages/frontpage/Frontpage'
 import Header from './components/header/Header'
 import Practical from './pages/practical/Practical'
@@ -9,6 +10,7 @@ import Team from "./pages/team/Team"
 export default function App() {
   return (
     <div>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Frontpage />} />

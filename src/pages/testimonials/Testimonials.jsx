@@ -2,6 +2,7 @@ import './Testimonials.scss'
 import ContentHeader from '../../components/contentheader/ContentHeader'
 import Divider from '../../components/divider/Divider'
 import TestimonialCard from '../../components/cards/testimonials/TestimonialCard'
+import PageNav from '../../components/page-nav/PageNav'
 import Footer from '../../components/footer/Footer'
 
 export default function Testimonials() {
@@ -45,6 +46,7 @@ export default function Testimonials() {
                     description="Min praktik hos Morningtrain startede med imposter-syndrom, men det blev hurtigt afløst af selvtillid takket være god sparring og vejledning fra kollegaerne omkring mig. Jeg lærte at stå på egne ben og forstod, at man ikke kan alt fra starten. Det vigtigste, jeg tager med mig, er evnen til at lære at lære – et uundværligt værktøj i min karriere som udvikler."
                     author="Søren Kloster, frontendpraktikant" />
             </div>
+            <PageNav />
             <Footer />
         </section>
     )
