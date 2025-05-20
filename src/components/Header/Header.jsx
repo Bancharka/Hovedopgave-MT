@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import "./HeaderStyle.scss";
 import BurgerMenu from "../burger-menu/Burger-menu";
@@ -23,7 +22,7 @@ export default function Header() {
  					<nav className="navigation">
  						<Link to="/Practical">Praktisk info</Link>
  						<Link to="/Culture">Kultur</Link>
- 						<Link to="/Practical">Ressourcer</Link>
+ 						<Link to="/Ressources">Ressourcer</Link>
  						<Link to="/Practical">Teamet</Link>
  						<Link to="/Testimonials">Tidligere praktikanter</Link>
  					</nav>

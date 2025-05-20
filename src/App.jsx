@@ -6,6 +6,7 @@ import Practical from './pages/practical/Practical'
 import Testimonials from './pages/testimonials/Testimonials'
 import Culture from "./pages/culture/Culture"
 import Team from "./pages/team/Team"
+import Ressources from './pages/ressources/Ressources' 
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/Testimonials" element={<Testimonials />} />
         <Route path="/Culture" element={<Culture />} />
         <Route path="/Team" element={<Team />} />
+        <Route path="/Ressources" element={<Ressources />} />
       </Routes>
     </div>
   )

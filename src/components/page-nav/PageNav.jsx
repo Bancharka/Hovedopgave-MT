@@ -9,6 +9,7 @@ export default function PageNav() {
         { path: '/', label: 'Forside' },
         { path: '/Practical', label: 'Praktisk info' },
         { path: '/Culture', label: 'Kultur' },
+        { path: '/Ressources', label: 'Ressourcer' },
         { path: '/Team', label: 'Teamet' },
         { path: '/Testimonials', label: 'Tidligere praktikanter'
          }
