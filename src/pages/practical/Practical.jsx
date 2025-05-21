@@ -10,11 +10,11 @@ export default function Practical() {
         <>
             <section className="page-container">
                 <Blurryblop
-                    style={{ top: "100px", left: "800px", width: "500px" }}
+                    style={{ top: "10%", left: "-20%" }}
                 />
-                <Blurryblop style={{ top: "800px", left: "50px" }} />
+                <Blurryblop style={{ top: "150%", left: "20%" }} />
                 <Blurryblop
-                    style={{ top: "2000px", left: "800px", width: "500px" }}
+                    style={{ top: "270%", left: "0%" }}
                 />
                 <ContentHeader
                     tagline="Så er du klar!"
