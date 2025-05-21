@@ -16,12 +16,12 @@
     }
 
     &__text {
-        color: v.$grey;
+        color: var(--txtcolor);
     }
 
     &__linktext {
         text-decoration: none;
-        color: v.$txtcolor;
+        color: var(--txtcolor);
         font-weight: 500;
         padding: 0 0.5rem;
 
@@ -30,7 +30,7 @@
         }
     }
     &__description {
-        color: v.$grey;
+        color: var(--txtcolor);
         font-size: 12px;
     }
 }

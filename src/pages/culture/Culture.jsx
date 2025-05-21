@@ -5,11 +5,16 @@ import Footer from "../../components/footer/Footer";
 import Orangebox from "../../components/orangebox/Orangebox";
 import PageNav from "../../components/page-nav/PageNav";
 import "./Culturestyle.scss";
+import Blurryblop from '../../components/blurryblop/Blurryblop'
 
 export default function Culture() {
 	return (
 		<>
 			<section className="page-container culture">
+			<Blurryblop style={{ top: "100px", left: "800px", width: "500px" }} />
+			<Blurryblop style={{ top: "850px", left: "30px", width: "600px" }} />
+			<Blurryblop style={{ top: "2000px", left: "600px", width: "900px" }} />
+			<Blurryblop style={{ top: "3500px", left: "30px", width: "900px" }} />
 				<ContentHeader
 					tagline="Så er du klar!"
 					heading="Kultur"

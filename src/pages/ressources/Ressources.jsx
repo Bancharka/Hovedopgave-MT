@@ -4,11 +4,16 @@ import Divider from '../../components/divider/Divider'
 import Footer from '../../components/footer/Footer'
 import TextImage from '../../components/textimage/TextImage'
 import PageNav from '../../components/page-nav/PageNav'
+import Blurryblop from '../../components/blurryblop/Blurryblop'
 
 export default function Ressources() {
     return (
         <>
             <section className="ressources page-container">
+                <Blurryblop style={{ top: "50px", left: "0px", width: "500px" }} />
+                <Blurryblop style={{ top: "600px", left: "450px", width: "800px" }} />
+                <Blurryblop style={{ top: "2000px", left: "0px", width: "700px" }} />
+                <Blurryblop style={{ top: "3000px", left: "400px", width: "900px" }} />
                 <ContentHeader
                     tagline="Så er du klar!"
                     heading="Ressourcer"

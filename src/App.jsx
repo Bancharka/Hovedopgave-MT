@@ -7,11 +7,13 @@ import Testimonials from './pages/testimonials/Testimonials'
 import Culture from "./pages/culture/Culture"
 import Team from "./pages/team/Team"
 import Ressources from './pages/ressources/Ressources' 
+import { ThemeProvider } from './ThemeContext.jsx'
 
 export default function App() {
   return (
     <div>
       <ScrollToTop />
+    <ThemeProvider>
       <Header />
       <Routes>
         <Route path="/" element={<Frontpage />} />
@@ -21,6 +23,7 @@ export default function App() {
         <Route path="/Team" element={<Team />} />
         <Route path="/Ressources" element={<Ressources />} />
       </Routes>
-    </div>
-  )
+      </ThemeProvider>
+      </div>
+  );
 } 
