@@ -33,8 +33,8 @@ export default function Header() {
 					<nav className="navigation">
 						<Link to="/Practical">Praktisk info</Link>
 						<Link to="/Culture">Kultur</Link>
-						<Link to="/Practical">Ressourcer</Link>
-						<Link to="/Practical">Teamet</Link>
+						<Link to="/Ressources">Ressourcer</Link>
+						<Link to="/Team">Teamet</Link>
 						<Link to="/Testimonials">Tidligere praktikanter</Link>
 					</nav>
 					<div className="overnav__menu">
