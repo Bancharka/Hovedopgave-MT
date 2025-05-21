@@ -1,4 +1,4 @@
-import './FooterStyle.scss';
+import './Footer.scss';
 import Divider from '../divider/Divider';
 
 export default function Footer() {

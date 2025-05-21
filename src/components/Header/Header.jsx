@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import "./HeaderStyle.scss";
-import BurgerMenu from "../burger-menu/Burger-menu";
+import "./Header.scss";
+import BurgerMenu from "../burgermenu/Burgermenu";
 import Bubbles from "../bubbles/Bubbles";
 import { useTheme } from "../../ThemeContext";
 

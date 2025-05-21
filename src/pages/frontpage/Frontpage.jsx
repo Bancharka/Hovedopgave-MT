@@ -1,4 +1,4 @@
-import "./frontpagestyle.scss";
+import "./Frontpage.scss";
 import Divider from "../../components/divider/Divider";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";

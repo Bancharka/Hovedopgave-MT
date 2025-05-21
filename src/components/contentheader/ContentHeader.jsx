@@ -1,4 +1,4 @@
-import './ContentHeaderStyle.scss'
+import './ContentHeader.scss'
 
 export default function ContentHeader({ tagline, heading, description }) {
     return (

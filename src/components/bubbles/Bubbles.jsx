@@ -1,4 +1,4 @@
-import "./BubblesStyle.scss";
+import "./Bubbles.scss";
 import { useTheme } from "../../ThemeContext";
 
 export default function Bubbles({ positions }) {

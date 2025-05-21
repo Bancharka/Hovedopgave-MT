@@ -1,4 +1,4 @@
-import "./OrangeboxStyle.scss"
+import "./Orangebox.scss"
 import { useTheme } from "../../ThemeContext";
 
 export default function Orangebox({ orangeheading, orangelist }) {
