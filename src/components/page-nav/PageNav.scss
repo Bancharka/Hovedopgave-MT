@@ -80,3 +80,17 @@
     }
   }
 }
+
+body.dark-mode {
+  .page-nav__prev,
+  .page-nav__next {
+    color: white;
+  }
+
+  .page-nav__prev::after,
+  .page-nav__prev::before,
+  .page-nav__next::after,
+  .page-nav__next::before {
+    background-color: white;
+  }
+}

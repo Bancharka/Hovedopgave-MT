@@ -4,11 +4,15 @@ import Divider from '../../components/divider/Divider'
 import Footer from '../../components/footer/Footer'
 import TextImage from '../../components/textimage/TextImage'
 import PageNav from '../../components/page-nav/PageNav'
+import Blurryblop from '../../components/blurryblop/Blurryblop'
 
 export default function Practical() {
     return (
         <>
             <section className="page-container">
+                <Blurryblop style={{ top: "100px", left: "800px", width: "500px" }} />
+                <Blurryblop style={{ top: "800px", left: "50px" }} />
+                <Blurryblop style={{ top: "2000px", left: "800px", width: "500px" }} />
                 <ContentHeader
                     tagline="Så er du klar!"
                     heading="Praktisk info"

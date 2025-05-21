@@ -1,0 +1,8 @@
+.blurryblop {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+  pointer-events: none;
+  filter: blur(30px);
+  
+}

@@ -2,21 +2,24 @@ import "./frontpagestyle.scss";
 import Divider from "../../components/divider/Divider";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
-import { useTheme } from "../../ThemeContext";  // <-- import the hook
+import { useTheme } from "../../ThemeContext";
+import Blurryblop from '../../components/blurryblop/Blurryblop'
 
 export default function Departments() {
-  const { darkMode } = useTheme();  // <-- get darkMode state
+  const { darkMode } = useTheme();
 
   return (
     <>
       <section className="page-container frontpage">
-        <div>
-          <p>VELKOMMEN TIL</p>
-          <img
-            src={darkMode ? "/img/frontpage/darkmode-onboardingtrain.svg" : "/img/frontpage/onboardingtrain.svg"} // <-- conditional src
-            alt="onboardingtrain logo"
-          />
-        </div>
+      <Blurryblop style={{ top: "100px", left: "800px", width: "500px" }} />
+      <Blurryblop style={{ top: "250px", left: "50px", width: "700px" }} />
+       <div className="start-text">
+        <p>VELKOMMEN TIL</p>
+        <img
+          src={darkMode ? "/img/frontpage/darkmode-onboardingtrain.svg" : "/img/frontpage/onboardingtrain.svg"}
+          alt="onboardingtrain logo"
+         />
+      </div>
 
         <Divider />
 

@@ -4,10 +4,13 @@ import Divider from '../../components/divider/Divider'
 import TestimonialCard from '../../components/cards/testimonials/TestimonialCard'
 import PageNav from '../../components/page-nav/PageNav'
 import Footer from '../../components/footer/Footer'
+import Blurryblop from '../../components/blurryblop/Blurryblop'
 
 export default function Testimonials() {
     return (
         <section className='testimonials page-container'>
+            <Blurryblop style={{ top: "30px", left: "100px", width: "500px" }} />
+            <Blurryblop style={{ top: "1000px", left: "600px", width: "900px" }} />
             <ContentHeader
                 tagline="Hvad siger tidligere praktikanter?"
                 heading="Tidligere praktikanter"

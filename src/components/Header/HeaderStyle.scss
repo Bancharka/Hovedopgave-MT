@@ -1,85 +1,90 @@
 @use "../../styles/mixins/breakpoints" as b;
 
 .headerstyling {
-	.overnav {
+  .overnav {
     color: var(--txtcolor);
   }
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 
-	top: 0;
-	z-index: 10;
-	position: relative;
+  top: 0;
+  z-index: 10;
+  position: relative;
 
-	@include b.break(mobile) {
-		overflow: hidden;
-	}
+  @include b.break(mobile) {
+    overflow: hidden;
+  }
 
-	&__wave {
-		position: absolute;
-		top: 0px;
-		width: 100%;
-		z-index: -1;
-		margin-top: -35px;
+  &__wave {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    margin-top: -35px;
 
-		@include b.break(laptop) {
-			margin-top: -10px;
-		}
+    @include b.break(laptop) {
+      margin-top: -10px;
+    }
 
-		@include b.break(mobile) {
-			margin-top: 0px;
-			width: 200%;
-		}
-	}
+    @include b.break(mobile) {
+      margin-top: 0px;
+      width: 200%;
+    }
+  }
 
-	.overnav {
-		margin-top: 30px;
-		display: flex;
-		flex-direction: row;
-		width: 90%;
-		justify-content: space-between;
-		gap: 20px;
+  .overnav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    gap: 20px;
 
-		&__morningtrain {
-			height: 40px;
-			padding-top: 15px;
+    &__morningtrain {
+      height: 40px;
+      padding-top: 15px;
 
-			@include b.break(laptop) {
-				height: 30px;
-				padding-top: 10px;
-			}
-		}
+      @include b.break(laptop) {
+        height: 30px;
+        padding-top: 10px;
+      }
+    }
 
-		&__menu {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap: 20px;
-		}
-		.navigation {
-			display: flex;
-			justify-content: space-between;
-			width: 700px;
-			align-items: center;
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
 
-			@include b.break(tablet) {
-				display: none;
-			}
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      width: 700px;
+      align-items: center;
 
-			a {
-				text-decoration: none;
-				color: var(--txtcolor);
-				font-size: 18px;
-				font-weight: 600;
+      @include b.break(tablet) {
+        display: none;
+      }
 
-				@include b.break(laptop) {
-					font-size: 16px;
-				}
-			}
-		}
+      a {
+        text-decoration: none;
+        color: var(--txtcolor);
+        font-size: 18px;
+        font-weight: 400;
 
-		&__moon {
-			height: 20px;
-		}
-	}
+        @include b.break(laptop) {
+          font-size: 16px;
+        }
+
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__moon {
+      height: 20px;
+    }
+  }
 }
