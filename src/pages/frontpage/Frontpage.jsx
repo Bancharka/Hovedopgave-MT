@@ -13,9 +13,10 @@ export default function Departments() {
       <section className="page-container frontpage">
       <Blurryblop style={{ top: "100px", left: "800px", width: "500px" }} />
       <Blurryblop style={{ top: "250px", left: "50px", width: "700px" }} />
-       <div className="start-text">
+       <div className="frontpage__starttext">
         <p>VELKOMMEN TIL</p>
         <img
+          className="frontpage__logo"
           src={darkMode ? "/img/frontpage/darkmode-onboardingtrain.svg" : "/img/frontpage/onboardingtrain.svg"}
           alt="onboardingtrain logo"
          />
