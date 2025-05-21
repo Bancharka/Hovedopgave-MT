@@ -1,8 +1,9 @@
-import ContentH2 from "../../components/contenth2/Contenth2";
+import TextImage from "../../components/textimage/TextImage";
 import ContentHeader from "../../components/contentheader/ContentHeader";
 import Divider from "../../components/divider/Divider";
 import Footer from "../../components/footer/Footer";
 import Orangebox from "../../components/orangebox/Orangebox";
+import PageNav from "../../components/page-nav/PageNav";
 import "./Culturestyle.scss";
 
 export default function Culture() {
@@ -15,7 +16,7 @@ export default function Culture() {
 					description="Sund fornuft, fleksible arbejdsrammer som rummer livet, autonome & ansvarlige arbejdsgange samt gode sociale tilbud. Det er Morningtrains opskrift på det gode arbejdsliv."
 				/>
 				<Divider />
-				<ContentH2
+				<TextImage
 					category="Vision"
 					heading="Vi bidrager til en verden, hvor godhed er sund forretning"
 					description="For os betyder godhed, at vi behandler hele værdikæden med fokus på bæredygtige langsigtede beslutninger. Mornings skal ikke vinde noget eller slå nogen - vi vil bare være her om 100 år."
@@ -36,7 +37,7 @@ export default function Culture() {
 				/>
 				<Divider />
 
-				<ContentH2
+				<TextImage
 					category="Mission"
 					heading="Værktøjet til at nå målet"
 					description="For at nå vores vision om at skabe fremtidens arbejdspladser, bruger vi vores mission som et konkret værktøj. Den fungerer som en opskrift med nøje udvalgte ingredienser - og rækkefølgen betyder noget."
@@ -56,7 +57,7 @@ export default function Culture() {
 					]}
 				/>
 				<Divider />
-				<ContentH2
+				<TextImage
 					category="Værdier"
 					heading="Værdierne - vores fælles kompas"
 					description="Værdierne hos Mornings er ikke blot ord på væggen - de er et aktivt værktøj, vi bruger, når tvivlen opstår. De hjælper os med at træffe beslutninger, der bringer os tættere på vores vision."
@@ -90,7 +91,7 @@ export default function Culture() {
 					/>
 				</div>
 				<Divider />
-				<ContentH2
+				<TextImage
 					category="Historien"
 					heading="For at forstå hvem man er, skal man forstå, hvor man kommer fra"
 					description="Morningtrain blev født ud af en fiasko. Fire unge iværksættere forsøgte at sælge en softwareplatform til radiostationer - putting radio on the internet! Turen gik til USA med store ambitioner, men mødet med virkeligheden var hårdt. Det blev tydeligt, at succes ikke handler om produktet alene - men om menneskene og rejsen."
@@ -98,7 +99,7 @@ export default function Culture() {
 					paragraph_bold2="Det er Morningtrain. Det er et sted, der føles som hjemme."
 				/>
 				<Divider />
-				<ContentH2
+				<TextImage
 					category="Organisationen"
 					heading="Strukturen der sætter strøm til den selvledte kollega"
 					description="I Morningtrain handler organisationsstruktur ikke om, hvem der bestemmer - men om, hvem der har ansvar. Når alle kender deres domæne, kan beslutninger træffes effektivt, uden unødvendigt bureaukrati."
@@ -122,7 +123,7 @@ export default function Culture() {
 							
 						]}
 					/>
-				
+				<PageNav />
 				<Footer />
 			</section>
 		</>

@@ -3,6 +3,7 @@ import ContentHeader from '../../components/contentheader/ContentHeader'
 import Divider from '../../components/divider/Divider'
 import Footer from '../../components/footer/Footer'
 import TextImage from '../../components/textimage/TextImage'
+import PageNav from '../../components/page-nav/PageNav'
 
 export default function Practical() {
     return (
@@ -58,9 +59,10 @@ export default function Practical() {
                     imageFirst={true}
                     altText={"Gokart event"}
                 />
+                <PageNav />
                 <Footer />
             </section>
         </>
     )
-}
+}   
 

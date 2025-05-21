@@ -1,47 +1,85 @@
-.headerstyling {
-  .overnav {
-    color: var(--txtcolor);
-  }
-
-  .navigation a {
-    color: var(--txtcolor);
-  }
-}
+@use "../../styles/mixins/breakpoints" as b;
 
 .headerstyling {
-  &__wave {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: -1;
+	.overnav {
+    color: var(--txtcolor);
   }
+	display: flex;
+	justify-content: center;
 
-  .overnav {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+	top: 0;
+	z-index: 10;
+	position: relative;
 
-    &__morningtrain {
-      height: 50px;
-    }
+	@include b.break(mobile) {
+		overflow: hidden;
+	}
 
-    .navigation {
-      display: flex;
-      justify-content: space-between;
-      width: 700px;
+	&__wave {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		z-index: -1;
+		margin-top: -35px;
 
-      a {
-        text-decoration: none;
-        color: var(--txtcolor); // ✅ Fixed here
-        font-size: 18px;
-        font-weight: 600;
-      }
-    }
+		@include b.break(laptop) {
+			margin-top: -10px;
+		}
 
-    &__moon {
-      height: 20px;
-    }
-  }
+		@include b.break(mobile) {
+			margin-top: 0px;
+			width: 200%;
+		}
+	}
+
+	.overnav {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		width: 90%;
+		justify-content: space-between;
+		gap: 20px;
+
+		&__morningtrain {
+			height: 40px;
+			padding-top: 15px;
+
+			@include b.break(laptop) {
+				height: 30px;
+				padding-top: 10px;
+			}
+		}
+
+		&__menu {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 20px;
+		}
+		.navigation {
+			display: flex;
+			justify-content: space-between;
+			width: 700px;
+			align-items: center;
+
+			@include b.break(tablet) {
+				display: none;
+			}
+
+			a {
+				text-decoration: none;
+				color: var(--txtcolor);
+				font-size: 18px;
+				font-weight: 600;
+
+				@include b.break(laptop) {
+					font-size: 16px;
+				}
+			}
+		}
+
+		&__moon {
+			height: 20px;
+		}
+	}
 }
