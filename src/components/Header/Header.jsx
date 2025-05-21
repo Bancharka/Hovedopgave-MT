@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./HeaderStyle.scss";
 import BurgerMenu from "../burger-menu/Burger-menu";
 import Bubbles from "../bubbles/Bubbles";
+import { useTheme } from "../../ThemeContext";
 
 export default function Header() {
   const { darkMode, toggleDarkMode } = useTheme();
@@ -20,14 +21,14 @@ export default function Header() {
     <section className="headerstyling">
       <img
         className="headerstyling__wave"
-        src={darkMode ? '/img/darkmode-wave.svg' : '/img/wave-header.svg'}
+        src={darkMode ? '/img/header/darkmode-wave.svg' : '/img/header/wave-header.svg'}
         alt="Wave graphic"
       />
       <div className="overnav">
         <a href="/">
           <img
             className="overnav__morningtrain"
-            src={darkMode ? '/img/logo-mt-dark.svg' : '/img/logo-mt.svg'}
+            src={darkMode ? '/img/header/logo-mt-dark.svg' : '/img/header/logo-mt.svg'}
             alt="Morningtrain logo"
           />
         </a>
@@ -41,7 +42,7 @@ export default function Header() {
 				<div className="overnav__menu">
         	<img
           className="overnav__moon"
-          src={darkMode ? '/img/icon _sun.svg' : '/img/icon _moon.svg'}
+          src={darkMode ? '/img/header/icon _sun.svg' : '/img/header/icon _moon.svg'}
           alt="Toggle dark mode"
           onClick={toggleDarkMode}
           style={{ cursor: 'pointer' }}

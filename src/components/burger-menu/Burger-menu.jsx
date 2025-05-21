@@ -1,8 +1,10 @@
  import { Link } from "react-router-dom";
  import { useState } from "react";
  import "./Burger-menu.scss";
+import { useTheme } from "../../ThemeContext";
 
  export default function BurgerMenu() {
+	const { darkMode } = useTheme();
  	const [isOpen, setIsOpen] = useState(false);
 
  	const handleLinkClick = () => {
@@ -49,10 +51,10 @@
  					</Link>
  				</div>
  				<img
- 					className="burger-menu__wave"
- 					src="/img/header/burger_wave.svg"
- 					alt=""
- 				/>
+  			className="burger-menu__wave"
+  			src={darkMode ? "/img/header/burger_wave_dark.svg" : "/img/header/burger_wave.svg"}
+  			alt=""
+				/>
  			</div>
  		</div>
  	);

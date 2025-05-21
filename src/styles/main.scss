@@ -4,7 +4,6 @@
 @use './mixins/breakpoints' as b;
 @use './modules/page-container' as page;
 
-
 body {
   color: var(--txtcolor);
 
@@ -23,15 +22,7 @@ body {
   }
 }
 
-body.dark-mode {
-  color: white;
-
-  a {
-    color: white;
-  }
-}
-
-// 2. Define CSS custom properties for light mode
+// Light mode variables
 :root {
   --txtcolor: #404040;
   --background: #ffffff;
@@ -41,18 +32,25 @@ body.dark-mode {
   --lightpurple: #6C63F999;
   --lightgreen: #73E2CA99;
   --lightred: #FBA7AA99;
+
+  // Burger menu background for light mode
+  --menu-bg: linear-gradient(#fff, #FF9452);
+  --menu-link-color: black;
 }
 
-// 3. Override them inside dark mode
+// Dark mode overrides
 .dark-mode {
   --txtcolor: #f5f5f5;
   --background: #121212;
   --orange: #ff9b5c;
   --grey: #bbbbbb;
-  // Add more if needed
+
+  // Burger menu background for dark mode
+  --menu-bg: linear-gradient(#6C63F9, #6C63F9); // solid purple
+  --menu-link-color: white;
 }
 
-// 4. Apply the variables globally
+// Global styles
 body {
   background-color: var(--background);
   color: var(--txtcolor);
@@ -60,4 +58,4 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@include page.page-container; 
+@include page.page-container;

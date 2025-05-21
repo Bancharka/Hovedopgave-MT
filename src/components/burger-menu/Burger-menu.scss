@@ -11,6 +11,7 @@
 	&__toggle {
 		font-size: 30px;
 		cursor: pointer;
+		color: var(--txtcolor);
 	}
 
 	&__overlay {
@@ -35,7 +36,7 @@
 		right: 17px;
 		font-size: 60px;
 		text-decoration: none;
-		color: #000;
+		color: var(--txtcolor);
 		cursor: pointer;
 		z-index: 11;
 	}
@@ -54,7 +55,7 @@
 			padding: 10px;
 			text-decoration: none;
 			font-size: 36px;
-			color: black;
+			color: var(--txtcolor);
 			display: block;
 			transition: 0.3s;
 
@@ -73,3 +74,15 @@
 	}
 }
 
+// 🌙 Dark mode styles
+body.dark-mode {
+	.burger-menu__content {
+		background: linear-gradient(#1f1b3a, #6c63f9); // dark purple gradient
+	}
+
+	.burger-menu__close,
+	.burger-menu__content a,
+	.burger-menu__toggle {
+		color: white;
+	}
+}

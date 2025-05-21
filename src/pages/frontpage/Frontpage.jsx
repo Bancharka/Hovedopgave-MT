@@ -13,7 +13,7 @@ export default function Departments() {
         <div>
           <p>VELKOMMEN TIL</p>
           <img
-            src={darkMode ? "/img/darkmode-onboardingtrain.svg" : "/img/onboardingtrain.svg"} // <-- conditional src
+            src={darkMode ? "/img/frontpage/darkmode-onboardingtrain.svg" : "/img/frontpage/onboardingtrain.svg"} // <-- conditional src
             alt="onboardingtrain logo"
           />
         </div>
