@@ -1,4 +1,3 @@
-import './PractialStyle.scss'
 import ContentHeader from '../../components/contentheader/ContentHeader'
 import Divider from '../../components/divider/Divider'
 import Footer from '../../components/footer/Footer'
@@ -21,7 +20,7 @@ export default function Practical() {
                 <Divider />
                 <TextImage
                     heading="Mødetider"
-                    description="Hos Morningtrain møder vi kl. 12 og går hjem kl. 13. Kan du ikke overholde disse krav om mødetider, skal du nok til lægen?"
+                    description="Vi forventer at du kan møde være på kontoret mellem 09:00 og 15:00"
                     image="/img/practical/time.png"
                     altText={"Ur"}
                 />

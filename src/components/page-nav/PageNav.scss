@@ -47,7 +47,7 @@
     }
   }
 
-  // Direction-specific animation origins
+  
   &__prev::before {
     transform-origin: left;
   }
@@ -91,6 +91,6 @@ body.dark-mode {
   .page-nav__prev::before,
   .page-nav__next::after,
   .page-nav__next::before {
-    background-color: white;
+    background-color: v.$mt-orange;
   }
 }
