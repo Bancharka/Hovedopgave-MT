@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "./Burger-menu.scss";
+import "./Burgermenu.scss";
 import { useTheme } from "../../ThemeContext";
 
 export default function BurgerMenu() {
@@ -12,26 +12,26 @@ export default function BurgerMenu() {
     };
 
     return (
-        <div className="burger-menu">
+        <div className="burgermenu">
             <span
-                className="burger-menu__toggle"
+                className="burgermenu__toggle"
                 onClick={() => setIsOpen(true)}
             >
                 &#9776;
             </span>
 
             <div
-                className={`burger-menu__overlay ${
-                    isOpen ? "burger-menu__overlay--show" : ""
+                className={`burgermenu__overlay ${
+                    isOpen ? "burgermenu__overlay--show" : ""
                 }`}
             >
                 <a
-                    className="burger-menu__close"
+                    className="burgermenu__close"
                     onClick={() => setIsOpen(false)}
                 >
                     &times;
                 </a>
-                <div className="burger-menu__content">
+                <div className="burgermenu__content">
                     <Link to="/Practical" onClick={handleLinkClick}>
                         Praktisk info
                     </Link>
@@ -49,7 +49,7 @@ export default function BurgerMenu() {
                     </Link>
                 </div>
                 <img
-                    className="burger-menu__wave"
+                    className="burgermenu__wave"
                     src={
                         darkMode
                             ? "/img/header/burger_wave_dark.svg"

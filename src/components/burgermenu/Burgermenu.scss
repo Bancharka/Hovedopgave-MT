@@ -1,7 +1,7 @@
 @use "../../styles/variables/index" as v;
 @use "../../styles/mixins/breakpoints" as b;
 
-.burger-menu {
+.burgermenu {
 	display: none;
 
 	@include b.break(tablet) {
@@ -76,13 +76,13 @@
 
 
 body.dark-mode {
-	.burger-menu__content {
+	.burgermenu__content {
 		background: linear-gradient(#1f1b3a, #6c63f9); 
 	}
 
-	.burger-menu__close,
-	.burger-menu__content a,
-	.burger-menu__toggle {
+	.burgermenu__close,
+	.burgermenu__content a,
+	.burgermenu__toggle {
 		color: white;
 	}
 }

@@ -1,10 +1,10 @@
+import "./Culture.scss";
 import TextImage from "../../components/textimage/TextImage";
 import ContentHeader from "../../components/contentheader/ContentHeader";
 import Divider from "../../components/divider/Divider";
 import Footer from "../../components/footer/Footer";
 import Orangebox from "../../components/orangebox/Orangebox";
 import PageNav from "../../components/page-nav/PageNav";
-import "./Culturestyle.scss";
 import Blurryblop from '../../components/blurryblop/Blurryblop'
 
 export default function Culture() {
