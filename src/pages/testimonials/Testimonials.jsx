@@ -40,7 +40,7 @@ export default function Testimonials() {
                     author="Vibe Thyra, designpraktikant" />
                 <TestimonialCard
                     theme='red'
-                    image="/img/testimonials/clara.jpg"
+                    image="/img/testimonials/soren.jpg"
                     altText="Frontendpraktikant Søren"
                     heading="Fra imposter-syndrom til selvtillid"
                     description="Min praktik hos Morningtrain startede med imposter-syndrom, men det blev hurtigt afløst af selvtillid takket være god sparring og vejledning fra kollegaerne omkring mig. Jeg lærte at stå på egne ben og forstod, at man ikke kan alt fra starten. Det vigtigste, jeg tager med mig, er evnen til at lære at lære – et uundværligt værktøj i min karriere som udvikler."
