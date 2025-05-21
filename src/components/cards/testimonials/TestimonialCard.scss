@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 50px 0 50px;
+  padding: 120px 50px 50px 50px;
   border-radius: 8px;
   background-color: v.$lightorange; 
   width: 380px;
@@ -14,7 +14,7 @@
   margin-top: 120px;
 
   @include b.break(laptop) {
-    padding: 80px 50px 0 50px;
+    padding: 80px 50px 25px 50px;
     width: 270px;
     margin-top: 130px;
   }
