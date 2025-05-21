@@ -16,7 +16,7 @@ export default function Culture() {
 			<Blurryblop style={{ top: "2000px", left: "600px", width: "900px" }} />
 			<Blurryblop style={{ top: "3500px", left: "30px", width: "900px" }} />
 				<ContentHeader
-					tagline="Så er du klar!"
+					tagline="Stærk kultur – stærkt team."
 					heading="Kultur"
 					description="Sund fornuft, fleksible arbejdsrammer som rummer livet, autonome & ansvarlige arbejdsgange samt gode sociale tilbud. Det er Morningtrains opskrift på det gode arbejdsliv."
 				/>

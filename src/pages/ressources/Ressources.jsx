@@ -15,7 +15,7 @@ export default function Ressources() {
                 <Blurryblop style={{ top: "2000px", left: "0px", width: "700px" }} />
                 <Blurryblop style={{ top: "3000px", left: "400px", width: "900px" }} />
                 <ContentHeader
-                    tagline="Så er du klar!"
+                    tagline="Dine værktøjer til praktikken."
                     heading="Ressourcer"
                     description="Her er nogle informationer omkring hvad vi bruger til hverdag. Det er ikke et krav at du kan dette før praktikstart, det er kun hvis du ønsker at forberede dig mere!"
                 />

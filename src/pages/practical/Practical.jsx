@@ -1,17 +1,21 @@
-import ContentHeader from '../../components/contentheader/ContentHeader'
-import Divider from '../../components/divider/Divider'
-import Footer from '../../components/footer/Footer'
-import TextImage from '../../components/textimage/TextImage'
-import PageNav from '../../components/page-nav/PageNav'
-import Blurryblop from '../../components/blurryblop/Blurryblop'
+import ContentHeader from "../../components/contentheader/ContentHeader";
+import Divider from "../../components/divider/Divider";
+import Footer from "../../components/footer/Footer";
+import TextImage from "../../components/textimage/TextImage";
+import PageNav from "../../components/page-nav/PageNav";
+import Blurryblop from "../../components/blurryblop/Blurryblop";
 
 export default function Practical() {
     return (
         <>
             <section className="page-container">
-                <Blurryblop style={{ top: "100px", left: "800px", width: "500px" }} />
+                <Blurryblop
+                    style={{ top: "100px", left: "800px", width: "500px" }}
+                />
                 <Blurryblop style={{ top: "800px", left: "50px" }} />
-                <Blurryblop style={{ top: "2000px", left: "800px", width: "500px" }} />
+                <Blurryblop
+                    style={{ top: "2000px", left: "800px", width: "500px" }}
+                />
                 <ContentHeader
                     tagline="Så er du klar!"
                     heading="Praktisk info"
@@ -20,7 +24,7 @@ export default function Practical() {
                 <Divider />
                 <TextImage
                     heading="Mødetider"
-                    description="Vi forventer at du kan møde være på kontoret mellem 09:00 og 15:00"
+                    description="Vi er ret fleksible når det kommer til arbejdstid, men vi forventer at du kan møde og være på kontoret mellem 09:00 og 15:00 fra mandag til fredag."
                     image="/img/practical/time.png"
                     altText={"Ur"}
                 />
@@ -57,8 +61,11 @@ export default function Practical() {
                 <Divider />
                 <TextImage
                     heading="MorningEvents"
-                    description="Hvad nu hvis man altid havde en form for fest? Som medarbejder i Morningtrain står du først i køen til sjove oplevelser med dine kollegaer. MorningEvents er en side, hvor du kan tilmelde dig til forskellige events og ugentlige sports-aktiviteter. Du kan også oprette din egen gruppe hvis du går med en fed idé, andre fra teamet kunne få glæde af. For at se og tilmelde dig events når du starter, kan du gå ind på morningevents.dk"
+                    description="Hvad nu hvis man altid havde en form for fest? Som medarbejder i Morningtrain står du først i køen til sjove oplevelser med dine kollegaer. MorningEvents er en side, hvor du kan tilmelde dig til forskellige events og ugentlige sports-aktiviteter. Du kan også oprette din egen gruppe hvis du går med en fed idé, andre fra teamet kunne få glæde af. For at se og tilmelde dig events når du starter, kan du gå ind på:"
                     image="/img/practical/event.png"
+                    links={[
+                        { text: 'Morningtrain Events', href: 'https://morningevents.dk/' }
+                    ]}
                     imageFirst={true}
                     altText={"Gokart event"}
                 />
@@ -66,6 +73,5 @@ export default function Practical() {
                 <Footer />
             </section>
         </>
-    )
-}   
-
+    );
+}
