@@ -1,13 +1,32 @@
 @use "../../styles/mixins/breakpoints" as b;
 
 .blurryblop {
-		position: absolute;
-		z-index: -1;
-		height: auto;
-		pointer-events: none;
-		filter: blur(30px);
-		
-		@include b.break(mobile) {
-				height: 250px;
-		}
+	position: absolute;
+	z-index: -10;
+	height: auto;
+	pointer-events: none;
+	filter: blur(30px);
+	animation: blops 10s ease-in-out infinite;
+	
+	@include b.break(mobile) {
+		height: 250px;
+	}
+}
+
+@keyframes blops {
+	0% {
+		transform: translate(0px, 0px) scale(1);
+	}
+	25% {
+		transform: translate(-5px, 0px) scale(1.05 );
+	}
+	50% {
+		transform: translate(5px, 15px) scale(0.9) rotate(15deg);
+	}
+	75% {
+		transform: translate(-3px, 3px) scale(1.1) ;
+	}
+	100% {
+		transform: translate(0px, 0px) scale(1);
+	}
 }

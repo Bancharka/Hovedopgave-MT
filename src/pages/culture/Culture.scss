@@ -20,6 +20,19 @@
         align-items: center;
         }
     }
+
+    &__desktopblop {
+		@include b.break(mobile) {
+			display: none;
+		}
+	}
+
+	&__cultureblop {
+		display: none;
+		@include b.break(mobile) {
+			display: block;
+		}
+	}
 }
 
 .none {

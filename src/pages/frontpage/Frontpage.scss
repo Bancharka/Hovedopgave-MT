@@ -4,48 +4,61 @@
 @use "sass:color";
 
 .frontpage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-  &__logo {
-    width: 100%;
-  }
+	&__desktopblop {
+		@include b.break(mobile) {
+			display: none;
+		}
+	}
 
-  &__starttext {
-    margin-top: space.$space-md;
-  }
+	&__frontpageblop {
+		display: none;
+		@include b.break(mobile) {
+			display: block;
+		}
+	}
 
-  &__description {
-    font-weight: v.$fw-bold;
-  }
+	&__logo {
+		width: 100%;
+	}
 
-  &__collage {
-    border-radius: 8px;
-    width: 100%;
-    margin-bottom: space.$space-md;
-  }
+	&__starttext {
+		margin-top: space.$space-md;
+	}
 
-  &__start {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 252px;
-    height: 50px;
-    background-color: v.$mt-orange;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-family: "Figtree", sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    transition-duration: 0.3s;
-    text-decoration: none;
-    margin-top: 20px;
+	&__description {
+		font-weight: v.$fw-bold;
+	}
 
-    &:hover {
-      background-color: color.adjust(v.$mt-orange, $lightness: 10%);
-    }
-  }
+	&__collage {
+		border-radius: 8px;
+		width: 100%;
+		margin-bottom: space.$space-md;
+	}
+
+	&__start {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 252px;
+		height: 50px;
+		background-color: v.$mt-orange;
+		border: none;
+		border-radius: 8px;
+		color: white;
+		font-family: "Figtree", sans-serif;
+		font-size: 18px;
+		cursor: pointer;
+		transition-duration: 0.3s;
+		text-decoration: none;
+		margin-top: 20px;
+
+		&:hover {
+			background-color: color.adjust(v.$mt-orange, $lightness: 10%);
+		}
+	}
 }

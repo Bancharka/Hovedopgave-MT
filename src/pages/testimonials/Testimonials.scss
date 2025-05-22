@@ -1,6 +1,19 @@
 @use "../../styles/mixins/breakpoints" as b;
 
 .testimonials {
+
+  &__desktopblop {
+		@include b.break(mobile) {
+			display: none;
+		}
+	}
+
+	&__mobileblop {
+		display: none;
+		@include b.break(mobile) {
+			display: block;
+		}
+	}
   
   &__cards {
     display: grid;

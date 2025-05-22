@@ -2,9 +2,9 @@
 
 
 
-.team {
-
-    &__desktopblop {
+.practical {
+    
+	&__desktopblop {
 		@include b.break(mobile) {
 			display: none;
 		}
