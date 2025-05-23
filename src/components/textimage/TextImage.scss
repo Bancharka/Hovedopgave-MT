@@ -26,6 +26,7 @@
 
   &__image {
     max-width: 50%;
+    
 
     @include b.break(mobile) {
       max-width: 100%;
@@ -38,7 +39,11 @@
 
   &__category {
     color: v.$mt-orange;
-    font-weight: 100;
+    font-weight: 400;
+    @include b.break(mobile) {
+        font-size: 20px;
+        
+    }
   }
 
 
@@ -47,6 +52,7 @@
     &__bold2 {
       font-weight: 800;
       margin: 15px 0 0;
+      font-size: 18px;
       
     }
   }

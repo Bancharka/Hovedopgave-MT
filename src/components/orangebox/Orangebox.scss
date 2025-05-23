@@ -4,7 +4,7 @@
 
 .orangebox {
 	border: none;
-	background-color: color.adjust(v.$mt-orange, $lightness: 10%);
+	background-color: color.adjust(v.$mt-orange, $lightness: 10%);	
 	border-radius: 8px;
 	padding: 30px 35px;
 	width: 350px;
@@ -23,6 +23,8 @@
 	@include b.break(mobile) {
 		margin: 0px 0px 0px;
 		width: 75%;
+		margin-top: 20px;
+		padding-bottom: 20px;
 	}
 
 	&__list {

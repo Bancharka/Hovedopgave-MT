@@ -43,12 +43,10 @@ h2 {
     }
 
     @include b.break(tablet) {
-        font-size: 32px;
+        font-size: 34px;
     }
 
-    @include b.break(mobile) {
-        font-size: 24px;
-    }
+    
 }
 
 h3 {
@@ -75,7 +73,7 @@ p {
     color: $txtcolor;
 
     @include b.break(tablet) {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     

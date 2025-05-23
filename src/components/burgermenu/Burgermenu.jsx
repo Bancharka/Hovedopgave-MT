@@ -38,10 +38,10 @@ export default function BurgerMenu() {
                     <Link to="/Culture" onClick={handleLinkClick}>
                         Kultur
                     </Link>
-                    <Link to="/Practical" onClick={handleLinkClick}>
+                    <Link to="/Ressources" onClick={handleLinkClick}>
                         Ressourcer
                     </Link>
-                    <Link to="/Practical" onClick={handleLinkClick}>
+                    <Link to="/Team" onClick={handleLinkClick}>
                         Teamet
                     </Link>
                     <Link to="/Testimonials" onClick={handleLinkClick}>

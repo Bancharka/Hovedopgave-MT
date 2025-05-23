@@ -4,9 +4,10 @@
 .page-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  // align-items: center;
+  // padding: 10px 20px;
   margin-top: v.$space-md;
+  gap: 10px;
 
   &__prev,
   &__next {
@@ -16,6 +17,7 @@
     cursor: pointer;
     text-decoration: none;
     color: v.$txtcolor;
+    padding: 20px 0 10px 10px;
 
     &::after {
       content: '';

@@ -18,12 +18,8 @@ export default function Testimonials() {
 				/>
 			</div>
 			<div className="testimonials__mobileblop">
-				<Blurryblop
-					style={{ top: "30px", left: "0px",  }}
-				/>
-				<Blurryblop
-					style={{ top: "1000px", left: "0px", }}
-				/>
+				<Blurryblop style={{ top: "30px", left: "-30px" }} />
+				<Blurryblop style={{ top: "1150px", left: "30px" }} />
 			</div>
 			<ContentHeader
 				tagline="Hvad siger tidligere praktikanter?"

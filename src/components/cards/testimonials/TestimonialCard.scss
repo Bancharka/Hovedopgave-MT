@@ -24,6 +24,12 @@
     margin-top: 80px;
   }
 
+  @include b.break(mobile) {
+    width: 85%;
+    margin-top: 80px;
+    padding:120px 25px 40px;
+  }
+
   
   &__image {
     position: absolute;

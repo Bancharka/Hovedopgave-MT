@@ -8,22 +8,28 @@ body {
   color: var(--txtcolor);
 
   p,
+  li,
+  
+  span,
+  div {
+    color: var(--txtcolor);
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6,
-  li,
-  a,
-  span,
-  div {
-    color: var(--txtcolor);
+  a {
+    color: var(--heading)
   }
+  
 }
 
 // Light mode variables
 :root {
+  --heading: #000;
   --txtcolor: #404040;
   --background: #ffffff;
   --orange: #FF9452;
@@ -33,20 +39,21 @@ body {
   --lightgreen: #73E2CA99;
   --lightred: #FBA7AA99;
 
-  // Burger menu background for light mode
+  // Burger menu background til light mode
   --menu-bg: linear-gradient(#fff, #FF9452);
   --menu-link-color: black;
 }
 
 // Dark mode overrides
 .dark-mode {
-  --txtcolor: #f5f5f5;
+  --heading: #ffffff;
+  --txtcolor: #d8d8d8;
   --background: #121212;
   --orange: #ff9b5c;
   --grey: #bbbbbb;
 
-  // Burger menu background for dark mode
-  --menu-bg: linear-gradient(#6C63F9, #6C63F9); // solid purple
+  // Burger menu background til dark mode
+  --menu-bg: linear-gradient(#6C63F9, #6C63F9); 
   --menu-link-color: white;
 }
 
