@@ -1,6 +1,7 @@
 import './TextImage.scss'
 
 export default function TextImage({
+    id,
     category,
     heading,
     description,
@@ -16,7 +17,7 @@ export default function TextImage({
     altText = ''
 }) {
     return (
-        <section className={`textimage ${imageFirst ? 'textimage--reverse' : ''}`}>
+        <section id={id} className={`textimage ${imageFirst ? 'textimage--reverse' : ''}`}>
             {image && <img className='textimage__image' src={image} alt={altText} />}
 
             <div className="textimage__content">
