@@ -2,27 +2,40 @@
 @use "../../styles/variables/index" as v;
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 .sidebar {
-	position: fixed;
-	left: 50px;
-	top: 300px;
+    position: fixed;
+    left: 50px;
+    top: 300px;
     z-index: 10;
 
-	
-		
-		
-		li {
-			list-style: none;
-			margin-top: 20px;
-            
-			a {
-				text-decoration: none;
+    
+    @include b.break(laptop) {
+        display: none;
+    }
+
+    &__line {
+        position: absolute;
+        top: 0px;
+        right: -10px;
+        height: 100%;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
                 color: var(--txtcolor);
                 font-weight: 600;
                 font-size: 18px;
-			}
-		}
-	
+            }
+        }
+    }
 }

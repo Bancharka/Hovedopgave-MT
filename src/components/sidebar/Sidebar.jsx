@@ -14,6 +14,7 @@ export default function Sidebar({ sidenavs = [] }) {
 					</li>
 				))}
 			</ul>
+			<img className="sidebar__line" src="img/sidebar/short-line.svg" alt="" />
 		</div>
 	);
 }
