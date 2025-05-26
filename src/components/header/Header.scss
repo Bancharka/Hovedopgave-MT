@@ -12,7 +12,10 @@
   position: relative;
 
   @include b.break(mobile) {
+    
     overflow: hidden;
+    height: 100px;
+    
   }
 
   &__wave {
