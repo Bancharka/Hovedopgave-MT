@@ -5,20 +5,20 @@ html {
     scroll-behavior: smooth;
 }
 .sidebar {
-    position: fixed;
-    left: 50px;
-    top: 300px;
+    position: sticky;
     z-index: 10;
+    top:200px;
+    align-self: flex-start; 
 
     
-    @include b.break(laptop) {
+    @include b.break(tablet) {
         display: none;
     }
 
     &__line {
         position: absolute;
         top: 0px;
-        right: -10px;
+        right: 0px;
         height: 100%;
     }
     ul {
@@ -26,6 +26,8 @@ html {
         justify-content: space-between;
         flex-direction: column;
         gap: 30px;
+        margin-right: 10px;
+        
 
         li {
             list-style: none;

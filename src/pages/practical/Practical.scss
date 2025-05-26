@@ -1,6 +1,11 @@
 @use "../../styles/mixins/breakpoints" as b;
 
-
+.nav-seperator {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	
+}
 
 .practical {
     
