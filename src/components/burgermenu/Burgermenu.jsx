@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import "./Burgermenu.scss";
-import { useTheme } from "../../ThemeContext";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import './Burgermenu.scss';
+import { useTheme } from '../../ThemeContext';
 
 export default function BurgerMenu() {
     const { darkMode } = useTheme();

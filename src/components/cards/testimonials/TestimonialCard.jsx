@@ -1,4 +1,4 @@
-import "./TestimonialCard.scss";
+import './TestimonialCard.scss';
 
 export default function TestimonialCard({
 	image,

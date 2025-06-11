@@ -1,9 +1,9 @@
-import "./Frontpage.scss";
-import Divider from "../../components/divider/Divider";
-import { Link } from "react-router-dom";
-import Footer from "../../components/footer/Footer";
-import { useTheme } from "../../ThemeContext";
-import Blurryblop from "../../components/blurryblop/Blurryblop";
+import './Frontpage.scss';
+import Divider from '../../components/divider/Divider';
+import { Link } from 'react-router-dom';
+import Footer from '../../components/footer/Footer';
+import { useTheme } from '../../ThemeContext';
+import Blurryblop from '../../components/blurryblop/Blurryblop';
 
 export default function Departments() {
 	const { darkMode } = useTheme();

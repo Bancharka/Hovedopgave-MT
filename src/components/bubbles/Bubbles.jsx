@@ -1,5 +1,5 @@
-import "./Bubbles.scss";
-import { useTheme } from "../../ThemeContext";
+import './Bubbles.scss';
+import { useTheme } from '../../ThemeContext';
 
 export default function Bubbles({ positions }) {
 		const { darkMode } = useTheme();

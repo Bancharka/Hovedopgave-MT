@@ -1,5 +1,5 @@
-import { useTheme } from "../../ThemeContext";
-import "./Blurryblop.scss";
+import { useTheme } from '../../ThemeContext';
+import './Blurryblop.scss';
 
 export default function Blurryblop({ style = {} }) {
     const { darkMode } = useTheme();

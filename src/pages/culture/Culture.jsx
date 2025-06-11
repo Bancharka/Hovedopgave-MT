@@ -1,12 +1,12 @@
-import "./Culture.scss";
-import TextImage from "../../components/textimage/TextImage";
-import ContentHeader from "../../components/contentheader/ContentHeader";
-import Divider from "../../components/divider/Divider";
-import Footer from "../../components/footer/Footer";
-import Orangebox from "../../components/orangebox/Orangebox";
-import PageNav from "../../components/page-nav/PageNav";
-import Blurryblop from "../../components/blurryblop/Blurryblop";
-import Sidebar from "../../components/sidebar/Sidebar";
+import './Culture.scss';
+import TextImage from '../../components/textimage/TextImage';
+import ContentHeader from '../../components/contentheader/ContentHeader';
+import Divider from '../../components/divider/Divider';
+import Footer from '../../components/footer/Footer';
+import Orangebox from '../../components/orangebox/Orangebox';
+import PageNav from '../../components/page-nav/PageNav';
+import Blurryblop from '../../components/blurryblop/Blurryblop';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 export default function Culture() {
     const sidenavs = [

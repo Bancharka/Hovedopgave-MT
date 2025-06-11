@@ -1,8 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
-import "./Header.scss";
-import BurgerMenu from "../burgermenu/Burgermenu";
-import Bubbles from "../bubbles/Bubbles";
-import { useTheme } from "../../ThemeContext";
+import { Link, useLocation } from 'react-router-dom';
+import './Header.scss';
+import BurgerMenu from '../burgermenu/Burgermenu';
+import Bubbles from '../bubbles/Bubbles';
+import { useTheme } from '../../ThemeContext';
 
 export default function Header() {
   const { darkMode, toggleDarkMode } = useTheme();

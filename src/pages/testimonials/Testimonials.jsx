@@ -1,10 +1,10 @@
-import "./Testimonials.scss";
-import ContentHeader from "../../components/contentheader/ContentHeader";
-import Divider from "../../components/divider/Divider";
-import TestimonialCard from "../../components/cards/testimonials/TestimonialCard";
-import PageNav from "../../components/page-nav/PageNav";
-import Footer from "../../components/footer/Footer";
-import Blurryblop from "../../components/blurryblop/Blurryblop";
+import './Testimonials.scss';
+import ContentHeader from '../../components/contentheader/ContentHeader';
+import Divider from '../../components/divider/Divider';
+import TestimonialCard from '../../components/cards/testimonials/TestimonialCard';
+import PageNav from '../../components/page-nav/PageNav';
+import Footer from '../../components/footer/Footer';
+import Blurryblop from '../../components/blurryblop/Blurryblop';
 
 export default function Testimonials() {
 	return (

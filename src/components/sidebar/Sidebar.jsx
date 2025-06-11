@@ -1,5 +1,5 @@
-import { useTheme } from "../../ThemeContext";
-import "./Sidebar.scss";
+import { useTheme } from '../../ThemeContext';
+import './Sidebar.scss';
 
 export default function Sidebar({ sidenavs = [] }) {
 	const { darkMode } = useTheme();

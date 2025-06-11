@@ -1,4 +1,4 @@
-@use "../../styles/mixins/breakpoints" as b;
+@use '../../styles/mixins/breakpoints' as b;
 
 
 .floating-circles {
@@ -8,7 +8,7 @@
 	width: 100%;
 	height: 100%;
 
-	pointer-events: none; // So they don't block interaction
+	pointer-events: none; 
 	@include b.break(mobile) {
 		display: none;
 	}
@@ -23,7 +23,7 @@
 		opacity: 0.9;
 		z-index: -10;
 
-		// Varying sizes and positions
+		
 		&.circle-0 {
 			width: 8px;
 			height: 8px;
@@ -90,7 +90,7 @@
 	}
 }
 
-// Animation that floats in small circular motion
+	
 @keyframes float {
 	0% {
 		transform: translate(0, 0);

@@ -1,11 +1,11 @@
-import "./Ressources.scss";
-import ContentHeader from "../../components/contentheader/ContentHeader";
-import Divider from "../../components/divider/Divider";
-import Footer from "../../components/footer/Footer";
-import TextImage from "../../components/textimage/TextImage";
-import PageNav from "../../components/page-nav/PageNav";
-import Blurryblop from "../../components/blurryblop/Blurryblop";
-import Sidebar from "../../components/sidebar/Sidebar";
+import './Ressources.scss';
+import ContentHeader from '../../components/contentheader/ContentHeader';
+import Divider from '../../components/divider/Divider';
+import Footer from '../../components/footer/Footer';
+import TextImage from '../../components/textimage/TextImage';
+import PageNav from '../../components/page-nav/PageNav';
+import Blurryblop from '../../components/blurryblop/Blurryblop';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 export default function Ressources() {
     const sidenavs = [

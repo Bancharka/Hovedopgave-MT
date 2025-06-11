@@ -1,6 +1,6 @@
-import { Link, useLocation } from "react-router-dom";
-import { useTheme } from "../../ThemeContext";
-import "./PageNav.scss";
+import { Link, useLocation } from 'react-router-dom';
+import { useTheme } from '../../ThemeContext';
+import './PageNav.scss';
 
 export default function PageNav() {
 	const { darkMode } = useTheme();

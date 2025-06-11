@@ -1,11 +1,11 @@
-import ContentHeader from "../../components/contentheader/ContentHeader";
-import Divider from "../../components/divider/Divider";
-import Footer from "../../components/footer/Footer";
-import TextImage from "../../components/textimage/TextImage";
-import PageNav from "../../components/page-nav/PageNav";
-import Blurryblop from "../../components/blurryblop/Blurryblop";
-import "./Practical.scss";
-import Sidebar from "../../components/sidebar/Sidebar";
+import ContentHeader from '../../components/contentheader/ContentHeader';
+import Divider from '../../components/divider/Divider';
+import Footer from '../../components/footer/Footer';
+import TextImage from '../../components/textimage/TextImage';
+import PageNav from '../../components/page-nav/PageNav';
+import Blurryblop from '../../components/blurryblop/Blurryblop';
+import './Practical.scss';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 export default function Practical() {
     const sidenavs = [

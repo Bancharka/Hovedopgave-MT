@@ -1,11 +1,11 @@
-import "./Team.scss";
-import ContentHeader from "../../components/contentheader/ContentHeader";
-import Divider from "../../components/divider/Divider";
-import TextImage from "../../components/textimage/TextImage";
-import Footer from "../../components/footer/Footer";
-import PageNav from "../../components/page-nav/PageNav";
-import Blurryblop from "../../components/blurryblop/Blurryblop";
-import Sidebar from "../../components/sidebar/Sidebar";
+import './Team.scss';
+import ContentHeader from '../../components/contentheader/ContentHeader';
+import Divider from '../../components/divider/Divider';
+import TextImage from '../../components/textimage/TextImage';
+import Footer from '../../components/footer/Footer';
+import PageNav from '../../components/page-nav/PageNav';
+import Blurryblop from '../../components/blurryblop/Blurryblop';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 export default function Team() {
     const sidenavs = [

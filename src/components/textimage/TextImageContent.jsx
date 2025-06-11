@@ -1,4 +1,4 @@
-import TextImageLinks from "./TextImageLinks";
+import TextImageLinks from './TextImageLinks';
 
 export default function TextImageContent({
     category,

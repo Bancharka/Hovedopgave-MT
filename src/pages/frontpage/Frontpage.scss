@@ -1,7 +1,7 @@
-@use "../../styles/variables/index" as v;
-@use "../../styles/mixins/breakpoints" as b;
-@use "../../styles/variables/spacing" as space;
-@use "sass:color";
+@use '../../styles/variables/index' as v;
+@use '../../styles/mixins/breakpoints' as b;
+@use '../../styles/variables/spacing' as space;
+@use 'sass:color';
 
 .frontpage {
 	display: flex;

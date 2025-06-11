@@ -1,8 +1,7 @@
-import TextImageContent from "./TextImageContent";
+import TextImageContent from './TextImageContent';
+import './TextImage.scss';
 
 export default function TextImage({
-    image,
-    altText = "",
     id,
     category,
     heading,
@@ -14,11 +13,13 @@ export default function TextImage({
     paragraph_bold2,
     listItems = [],
     links = [],
-    reversed = false
+    image,
+    imageFirst = false,
+    altText = ''
 }) {
     return (
-        <section id={id} className={`textimage ${reversed ? 'textimage--reverse' : ''}`}>
-            {image && <img className="textimage__image" src={image} alt={altText} />}
+        <section id={id} className={`textimage ${imageFirst ? 'textimage--reverse' : ''}`}>
+            {image && <img className='textimage__image' src={image} alt={altText} />}
             <TextImageContent
                 category={category}
                 heading={heading}
@@ -34,3 +35,4 @@ export default function TextImage({
         </section>
     );
 }
+
