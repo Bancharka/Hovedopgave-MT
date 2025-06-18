@@ -13,25 +13,25 @@ export default function BurgerMenu() {
 
     return (
         <div className="burgermenu">
-            <span
-                className="burgermenu__toggle"
+            <button
+                className="button-reset burgermenu__toggle"
                 onClick={() => setIsOpen(true)}
             >
                 &#9776;
-            </span>
+            </button>       
 
             <div
                 className={`burgermenu__overlay ${
                     isOpen ? "burgermenu__overlay--show" : ""
                 }`}
             >
-                <a
-                    className="burgermenu__close"
+                <button
+                    className="button-reset burgermenu__close"
                     onClick={() => setIsOpen(false)}
                 >
                     &times;
-                </a>
-                <div className="burgermenu__content">
+                </button>
+                <nav className="burgermenu__content">
                     <Link to="/Practical" onClick={handleLinkClick}>
                         Praktisk info
                     </Link>
@@ -47,7 +47,7 @@ export default function BurgerMenu() {
                     <Link to="/Testimonials" onClick={handleLinkClick}>
                         Tidligere praktikanter
                     </Link>
-                </div>
+                </nav>
                 <img
                     className="burgermenu__wave"
                     src={
@@ -55,7 +55,7 @@ export default function BurgerMenu() {
                             ? "/img/header/burger_wave_dark.svg"
                             : "/img/header/burger_wave.svg"
                     }
-                    alt=""
+                    alt="Orange bølgegrafik i forskellige lag"
                 />
             </div>
         </div>

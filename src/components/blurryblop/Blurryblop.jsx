@@ -9,9 +9,9 @@ export default function Blurryblop({ style = {} }) {
     return (
         
             <img
+                aria-hidden="true"
                 className="blurryblop"
                 src="img/blurryblop.svg"
-                alt="Blurry decorative blob"
                 style={style}
             />
         

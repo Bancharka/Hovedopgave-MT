@@ -1,92 +1,103 @@
 @use "../../styles/mixins/breakpoints" as b;
 
 .headerstyling {
-  .overnav {
-    color: var(--txtcolor);
-  }
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+	top: 0;
+	z-index: 10;
+	position: relative;
 
-  top: 0;
-  z-index: 10;
-  position: relative;
+	.overnav {
+		color: var(--txtcolor);
+	}
 
-  @include b.break(mobile) {
-    
-    overflow: hidden;
-    height: 100px;
-    
-  }
+	@include b.break(mobile) {
+		overflow: hidden;
+		height: 100px;
+	}
 
-  &__wave {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: -1;
-    margin-top: -35px;
+	&__wave {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		z-index: -1;
+		margin-top: -35px;
 
-    @include b.break(laptop) {
-      margin-top: -10px;
-    }
+		@include b.break(laptop) {
+			margin-top: -10px;
+		}
 
-    @include b.break(mobile) {
-      margin-top: 0px;
-      width: 200%;
-    }
-  }
+		@include b.break(mobile) {
+			margin-top: 0px;
+			width: 200%;
+		}
+	}
 
-  .overnav {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
-    gap: 20px;
+	.overnav {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		width: 90%;
+		justify-content: space-between;
+		gap: 20px;
 
-    &__morningtrain {
-      height: 40px;
-      padding-top: 15px;
+		&__morningtrain {
+			height: 40px;
+			padding-top: 15px;
 
-      @include b.break(laptop) {
-        height: 30px;
-        padding-top: 10px;
+			@include b.break(laptop) {
+				height: 30px;
+				padding-top: 10px;
+			}
+		}
+
+		&__menu {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 20px;
+		}
+
+		&__button-reset {
+			all: unset;
+			cursor:pointer;
+			display: inline-flex; /* or block/flex as needed */
+			align-items: center;
+			justify-content: center;
+      &:focus-visible {
+        outline: 2px solid white;
+        border:  solid black;
+        border-radius: 3px;
       }
-    }
+		}
 
-    &__menu {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 20px;
-    }
+		.navigation {
+			display: flex;
+			justify-content: space-between;
+			width: 700px;
+			align-items: center;
 
-    .navigation {
-      display: flex;
-      justify-content: space-between;
-      width: 700px;
-      align-items: center;
+			@include b.break(tablet) {
+				display: none;
+			}
 
-      @include b.break(tablet) {
-        display: none;
-      }
+			a {
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: 400;
 
-      a {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 400;
+				@include b.break(laptop) {
+					font-size: 16px;
+				}
 
-        @include b.break(laptop) {
-          font-size: 16px;
-        }
+				&.active {
+					font-weight: 700;
+				}
+			}
+		}
 
-        &.active {
-          font-weight: 700;
-        }
-      }
-    }
-
-    &__moon {
-      height: 20px;
-    }
-  }
+		&__moon {
+			height: 20px;
+		}
+	}
 }

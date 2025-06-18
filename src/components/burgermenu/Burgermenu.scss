@@ -12,6 +12,10 @@
 		font-size: 30px;
 		cursor: pointer;
 		color: var(--txtcolor);
+		background-color: transparent;
+		border: none;      	
+      
+		
 	}
 
 	&__overlay {
@@ -39,6 +43,8 @@
 		color: var(--txtcolor);
 		cursor: pointer;
 		z-index: 11;
+		background-color: transparent;
+		border: none;	
 	}
 
 	&__content {
